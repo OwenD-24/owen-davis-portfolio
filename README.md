@@ -134,8 +134,18 @@ Live Demo: https://owend-24.github.io/JS-Colour-Picker-Project/
 
 ## Local Development
 
+This repository is public so recruiters and technical reviewers can inspect the project structure, code quality and setup.
+
 Clone the repository:
 
 ```bash
 git clone https://github.com/OwenD-24/owen-davis-portfolio.git
 cd owen-davis-portfolio
+
+
+Then add this near the bottom:
+
+```md
+## Usage Note
+
+This portfolio is a personal showcase project for Owen Davis. The code is public for review and learning reference, but the content, branding and case study material are personal to this portfolio.
