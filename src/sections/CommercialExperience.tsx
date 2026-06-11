@@ -10,7 +10,7 @@ function CommercialExperience() {
       />
 
       <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
-        <article className="rounded-3xl border border-white/10 bg-white/[0.03] p-8">
+        <article className="rounded-3xl border border-white/10 bg-white/3 p-8">
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">
             TechnoCore LTD
           </p>

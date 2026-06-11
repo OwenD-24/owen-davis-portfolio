@@ -32,7 +32,7 @@ function Skills() {
         {skillGroups.map((group) => (
           <article
             key={group.title}
-            className="rounded-3xl border border-white/10 bg-white/[0.03] p-6"
+            className="rounded-3xl border border-white/10 bg-white/3 p-6"
           >
             <h3 className="text-lg font-bold text-white">{group.title}</h3>
 
