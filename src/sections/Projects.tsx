@@ -8,12 +8,16 @@ function Projects() {
       <SectionHeading
         eyebrow="Selected Projects"
         title="Commercial experience, AI-assisted prototypes and public builds."
-        description="These projects are ordered to show the strongest signal first: commercial work, AI-assisted workflow thinking, then public full-stack and frontend projects."
+        description="A focused selection of commercial work, AI-assisted workflow thinking, full-stack projects and frontend fundamentals."
       />
 
       <div className="grid gap-6 md:grid-cols-2">
-        {projects.map((project) => (
-          <ProjectCard key={project.title} project={project} />
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={project.title}
+            project={project}
+            featured={index < 2}
+          />
         ))}
       </div>
     </section>

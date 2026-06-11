@@ -2,14 +2,29 @@ import type { Project } from '../data/projects'
 
 type ProjectCardProps = {
   project: Project
+  featured?: boolean
 }
 
-function ProjectCard({ project }: ProjectCardProps) {
+function ProjectCard({ project, featured = false }: ProjectCardProps) {
   return (
-    <article className="flex h-full flex-col rounded-3xl border border-white/10 bg-white/3 p-6 shadow-2xl shadow-black/20 transition hover:border-cyan-300/40 hover:bg-white/5">
-      <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-cyan-300">
-        {project.eyebrow}
-      </p>
+    <article
+      className={`flex h-full flex-col rounded-3xl border p-6 shadow-2xl shadow-black/20 transition ${
+        featured
+          ? 'border-cyan-300/30 bg-cyan-300/5 hover:border-cyan-300/60'
+          : 'border-white/10 bg-white/3 hover:border-cyan-300/40 hover:bg-white/5'
+      }`}
+    >
+      <div className="mb-3 flex flex-wrap items-center gap-2">
+        <p className="text-xs font-semibold uppercase tracking-[0.25em] text-cyan-300">
+          {project.eyebrow}
+        </p>
+
+        {featured ? (
+          <span className="rounded-full border border-cyan-300/30 bg-cyan-300/10 px-3 py-1 text-xs font-semibold text-cyan-200">
+            Featured
+          </span>
+        ) : null}
+      </div>
 
       <h3 className="text-2xl font-bold tracking-tight text-white">
         {project.title}
@@ -27,14 +42,14 @@ function ProjectCard({ project }: ProjectCardProps) {
         {project.tags.map((tag) => (
           <span
             key={tag}
-            className="rounded-full border border-white/10 px-3 py-1 text-xs text-slate-300"
+            className="rounded-full border border-white/10 bg-slate-950/30 px-3 py-1 text-xs text-slate-300"
           >
             {tag}
           </span>
         ))}
       </div>
 
-      <div className="mt-6 flex flex-wrap gap-3">
+      <div className="mt-auto flex flex-wrap gap-3 pt-6">
         {project.links?.map((link) => (
           <a
             key={link.href}
