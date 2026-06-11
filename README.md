@@ -141,11 +141,38 @@ Clone the repository:
 ```bash
 git clone https://github.com/OwenD-24/owen-davis-portfolio.git
 cd owen-davis-portfolio
+```
 
+Install dependencies:
 
-Then add this near the bottom:
+```bash
+npm install
+```
 
-```md
+Run the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
 ## Usage Note
 
 This portfolio is a personal showcase project for Owen Davis. The code is public for review and learning reference, but the content, branding and case study material are personal to this portfolio.
+
+## Status
+
+Version 1 is currently in progress.
+
+The first homepage structure is built. The next steps are homepage polish, case study pages and deployment.
