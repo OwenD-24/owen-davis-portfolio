@@ -1,73 +1,141 @@
-# React + TypeScript + Vite
+# Owen Davis Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React, TypeScript, Vite and Tailwind CSS developer portfolio showcasing my commercial software experience, public projects and AI-assisted development direction.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This portfolio is designed to present my current developer profile clearly for recruiters, hiring managers and technical contacts.
 
-## React Compiler
+It focuses on:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Commercial software experience
+- React and TypeScript development
+- Full-stack project history
+- Public GitHub projects
+- AI-assisted development and workflow thinking
+- Case study-ready project structure
 
-## Expanding the ESLint configuration
+## Featured Experience
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### BodyHoliday / SAM / FEGA Commercial Case Study
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Private commercial project experience supporting a hospitality and wellness booking platform.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+The public portfolio summary focuses on safe, non-sensitive areas including:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Guest-facing booking workflows
+- Staff/admin workflows
+- SQL data operations
+- YAML/Axion configuration
+- Testing with dummy guest scenarios
+- Training and go-live preparation
+- St Lucia operational support
+- AI-assisted workflow replication and prototyping
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Sensitive client data, private screenshots and internal implementation details are intentionally excluded.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Featured Projects
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### FEGA/SAM AI-Assisted Rebuild Concept
+
+A private Loveable prototype used to explore how legacy booking workflows could be replicated and improved with AI-assisted development.
+
+Focus areas include:
+
+- Guest booking flows
+- Service/provider/room workflows
+- Couple treatment booking
+- Infrared therapy calendar splitting
+- Admin and assignment screens
+- Safer, cleaner workflow modelling
+
+### ZTZ Studios / 72h Offer Engine
+
+A productised service website and offer engine for landing page, brand kit and audit sprint offers.
+
+Shows:
+
+- Product thinking
+- Conversion-focused page structure
+- Responsive layouts
+- Service architecture
+- Deployment experience
+
+### Graphic Design Blog
+
+Full-stack Django blog app with:
+
+- User registration and login
+- Profile management
+- CRUD blog post functionality
+- Favourites and saved content
+- PostgreSQL
+- Cloudinary
+- Heroku deployment
+
+GitHub: https://github.com/OwenD-24/Graphic-Design-Blog
+
+### Collections Dashboard
+
+Flask and MySQL dashboard built as a practical technical task before joining TechnoCore.
+
+Shows:
+
+- Flask routes
+- MySQL-backed records
+- CRUD-style workflow structure
+- HTML/CSS templates
+- Git/GitHub project handling
+
+GitHub: https://github.com/OwenD-24/mysql-flask-app
+
+### Colour Palette Generator
+
+Vanilla JavaScript frontend project with:
+
+- Random colour palette generation
+- DOM manipulation
+- Event listeners
+- Keyboard shortcuts
+- Clipboard API
+- Responsive layout
+- GitHub Pages deployment
+
+GitHub: https://github.com/OwenD-24/JS-Colour-Picker-Project
+
+Live Demo: https://owend-24.github.io/JS-Colour-Picker-Project/
+
+## Tech Stack
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router
+- Git
+- GitHub
+
+## Current Sections
+
+- Hero
+- Commercial Experience
+- Projects
+- Skills
+- Contact
+
+## Planned Improvements
+
+- Add dedicated BodyHoliday/SAM/FEGA case study page
+- Add dedicated Loveable prototype case study page
+- Add project screenshots
+- Add responsive polish
+- Deploy to Vercel
+- Add live portfolio link to LinkedIn and GitHub profile
+
+## Local Development
+
+Clone the repository:
+
+```bash
+git clone https://github.com/OwenD-24/owen-davis-portfolio.git
+cd owen-davis-portfolio
