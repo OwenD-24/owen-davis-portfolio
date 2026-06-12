@@ -2,6 +2,10 @@
 
 A React, TypeScript, Vite and Tailwind CSS developer portfolio showcasing my commercial software experience, public projects and AI-assisted development direction.
 
+## Live Site
+
+[View Portfolio](https://owen-davis-portfolio.vercel.app/)
+
 ## Overview
 
 This portfolio is designed to present my current developer profile clearly for recruiters, hiring managers and technical contacts.
