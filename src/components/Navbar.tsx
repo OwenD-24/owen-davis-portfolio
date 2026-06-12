@@ -1,8 +1,8 @@
 const navLinks = [
-  { label: 'Experience', href: '#experience' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Experience', href: '/#experience' },
+  { label: 'Projects', href: '/#projects' },
+  { label: 'Skills', href: '/#skills' },
+  { label: 'Contact', href: '/#contact' },
 ]
 
 function Navbar() {
@@ -26,7 +26,7 @@ function Navbar() {
         </div>
 
         <a
-          href="#contact"
+          href="/#contact"
           className="rounded-full border border-cyan-300/40 px-4 py-2 text-sm font-semibold text-cyan-300 transition hover:bg-cyan-300 hover:text-slate-950"
         >
           Let&apos;s Talk
