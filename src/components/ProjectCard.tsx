@@ -1,3 +1,4 @@
+import { Link } from 'react-router'
 import type { Project } from '../data/projects'
 
 type ProjectCardProps = {
@@ -50,6 +51,15 @@ function ProjectCard({ project, featured = false }: ProjectCardProps) {
       </div>
 
       <div className="mt-auto flex flex-wrap gap-3 pt-6">
+        {project.caseStudyHref ? (
+          <Link
+            to={project.caseStudyHref}
+            className="rounded-full bg-cyan-400 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-cyan-300"
+          >
+            View Case Study
+          </Link>
+        ) : null}
+        
         {project.links?.map((link) => (
           <a
             key={link.href}

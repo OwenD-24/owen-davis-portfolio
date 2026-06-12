@@ -1,19 +1,25 @@
+import { Route, Routes } from 'react-router'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import CommercialExperience from './sections/CommercialExperience'
-import Projects from './sections/Projects'
-import Skills from './sections/Skills'
-import Contact from './sections/Contact'
+import HomePage from './pages/HomePage'
+import BodyHolidayCaseStudy from './pages/BodyHolidayCaseStudy'
+import FegaSamAiRebuildCaseStudy from './pages/FegaSamAiRebuildCaseStudy'
 
 function App() {
   return (
     <main className="min-h-screen bg-slate-950 text-slate-100">
       <Navbar />
-      <Hero />
-      <CommercialExperience />
-      <Projects />
-      <Skills />
-      <Contact />
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route
+          path="/case-studies/bodyholiday-sam-fega"
+          element={<BodyHolidayCaseStudy />}
+        />
+        <Route
+          path="/case-studies/fega-sam-ai-rebuild"
+          element={<FegaSamAiRebuildCaseStudy />}
+        />
+      </Routes>
     </main>
   )
 }

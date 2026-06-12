@@ -11,6 +11,7 @@ export type Project = {
   tags: string[]
   links?: ProjectLink[]
   status?: string
+  caseStudyHref?: string
 }
 
 export const projects: Project[] = [
@@ -23,6 +24,7 @@ export const projects: Project[] = [
       'Contributed to real commercial delivery work including St Lucia go-live preparation, dummy guest testing, permissions checks, data validation and issue resolution with resort teams.',
     tags: ['Commercial Software', 'SQL', 'YAML/Axion', 'Testing', 'Training'],
     status: 'Private commercial work — safe case study page coming soon.',
+    caseStudyHref: '/case-studies/bodyholiday-sam-fega',
   },
   {
     title: 'FEGA/SAM AI-Assisted Rebuild Concept',
@@ -33,6 +35,7 @@ export const projects: Project[] = [
       'Models guest booking journeys, service/provider/room workflows, couple treatment booking, infrared therapy calendar splitting and admin assignment screens.',
     tags: ['AI-Assisted Development', 'Lovable', 'Product Thinking', 'UX Flow'],
     status: 'Private prototype — screenshots to be added after sanitising names/data.',
+    caseStudyHref: '/case-studies/fega-sam-ai-rebuild',
   },
   {
     title: 'ZTZ Studios / 72h Offer Engine',
