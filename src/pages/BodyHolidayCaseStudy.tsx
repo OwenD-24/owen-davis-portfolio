@@ -29,7 +29,7 @@ const contributionGroups = [
     title: 'Testing, training and go-live support',
     items: [
       'Supported testing, bug investigation and issue checking during active project delivery.',
-      'Travelled to St Lucia as part of go-live preparation and supported in-person testing and training.',
+      'Travelled internationally to St Lucia as part of go-live preparation and supported in-person testing and training.',
       'Worked around real operational feedback from resort teams, not only isolated demo scenarios.',
     ],
   },
@@ -195,7 +195,7 @@ function BodyHolidayCaseStudy() {
           </h2>
 
           <p className="mt-5 leading-8 text-slate-300">
-            As part of go-live preparation, I travelled to St Lucia and supported
+            As part of go-live preparation, I travelled internationally to St Lucia and supported
             in-person testing, training, data validation and issue resolution
             with resort teams. This gave me direct exposure to how software
             changes affect real operations, not just local development screens.

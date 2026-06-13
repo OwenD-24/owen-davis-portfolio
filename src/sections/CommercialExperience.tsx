@@ -56,7 +56,7 @@ function CommercialExperience() {
             </p>
 
             <p>
-              Travelled to St Lucia as part of go-live preparation, supporting
+              Travelled internationally to St Lucia as part of go-live preparation, supporting
               in-person testing, training, data validation and issue resolution
               with resort teams.
             </p>
