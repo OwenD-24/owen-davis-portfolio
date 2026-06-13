@@ -61,6 +61,94 @@ const learningPoints = [
   'Strong communication matters when developers, managers and operational teams all need the same system to work correctly.',
 ]
 
+const guestFlowImages = [
+  {
+    src: '/images/case-studies/bodyholiday/bodyholiday-guest-flow-full-wireframe.png',
+    alt: 'BodyHoliday guest onboarding flow full wireframe',
+    title: 'Full guest-flow wireframe',
+    caption:
+      'A public-safe wireframe showing the planned journey from email link, login and registration through to terms, forms and calendar choice.',
+    wide: true,
+  },
+  {
+    src: '/images/case-studies/bodyholiday/bodyholiday-guest-flow-registration-login.png',
+    alt: 'BodyHoliday registration and login branch wireframe',
+    title: 'Registration and login branch',
+    caption:
+      'Shows how unregistered guests were routed through account creation before returning to the login flow.',
+  },
+  {
+    src: '/images/case-studies/bodyholiday/bodyholiday-guest-flow-first-visit-calendar-choice.png',
+    alt: 'BodyHoliday first visit form and calendar choice wireframe',
+    title: 'First-visit and calendar-choice logic',
+    caption:
+      'Shows how first-time guests moved through preferences, spa and dietary forms before choosing whether to build their own calendar or wait for pre-arrivals.',
+  },
+]
+
+const restaurantFlowImages = [
+  {
+    src: '/images/case-studies/bodyholiday/bodyholiday-guest-side-nav-homepage.png',
+    alt: 'BodyHoliday FEGA guest side navigation homepage',
+    title: 'Guest-side navigation',
+    caption:
+      'The updated FEGA guest navigation showing the restaurant area inside the wider guest experience.',
+  },
+  {
+    src: '/images/case-studies/bodyholiday/bodyholiday-restaurant-category-menu.png',
+    alt: 'BodyHoliday restaurant category menu screen',
+    title: 'Restaurant category menu',
+    caption:
+      'Shows how dining options such as Tao, I-Tal, Cariblue, Windows and The Clubhouse were presented to guests.',
+  },
+  {
+    src: '/images/case-studies/bodyholiday/bodyholiday-restaurant-paid-booking-date.png',
+    alt: 'BodyHoliday Tao paid restaurant booking date selection screen',
+    title: 'Paid restaurant date selection',
+    caption:
+      'A Tao booking screen showing the start of the guest-facing paid restaurant reservation journey.',
+  },
+  {
+    src: '/images/case-studies/bodyholiday/bodyholiday-demo-calendar-bookings.png',
+    alt: 'BodyHoliday demo calendar showing guest bookings',
+    title: 'Demo calendar booking view',
+    caption:
+      'A demo calendar view showing how guest bookings and activities could appear after booking-flow actions were completed.',
+  },
+]
+
+type VisualImage = {
+  src: string
+  alt: string
+  title: string
+  caption: string
+  wide?: boolean
+}
+
+function VisualProofCard({ image }: { image: VisualImage }) {
+  return (
+    <figure
+      className={`overflow-hidden rounded-3xl border border-white/10 bg-white/3 ${
+        image.wide ? 'md:col-span-2' : ''
+      }`}
+    >
+      <div className="overflow-hidden border-b border-white/10 bg-slate-950/60">
+        <img
+          src={image.src}
+          alt={image.alt}
+          loading="lazy"
+          className="h-full w-full object-cover transition duration-500 hover:scale-[1.02]"
+        />
+      </div>
+
+      <figcaption className="p-5">
+        <p className="text-sm font-bold text-white">{image.title}</p>
+        <p className="mt-2 text-sm leading-6 text-slate-400">{image.caption}</p>
+      </figcaption>
+    </figure>
+  )
+}
+
 function BodyHolidayCaseStudy() {
   return (
     <section className="mx-auto w-full max-w-6xl px-6 pb-24 pt-36">
@@ -181,6 +269,118 @@ function BodyHolidayCaseStudy() {
               </ul>
             </article>
           ))}
+        </div>
+      </div>
+
+      <div className="mt-20">
+        <p className="text-sm font-semibold uppercase tracking-[0.35em] text-cyan-300">
+          Visual proof
+        </p>
+
+        <h2 className="mt-4 max-w-4xl text-4xl font-bold tracking-tight text-white">
+          Workflow visuals and delivery examples.
+        </h2>
+
+        <p className="mt-5 max-w-4xl text-lg leading-8 text-slate-300">
+          These visuals show safe examples of the type of guest-facing workflow and
+          booking experience I worked around during the BodyHoliday / SAM / FEGA
+          project. They are included as public-safe visual references and do not
+          expose private guest data, credentials, internal implementation details or
+          confidential business logic.
+        </p>
+
+        <div className="mt-10 rounded-3xl border border-cyan-300/20 bg-cyan-300/5 p-6 sm:p-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+            Guest onboarding flow
+          </p>
+
+          <h3 className="mt-4 text-3xl font-bold tracking-tight text-white">
+            Guest onboarding flow logic.
+          </h3>
+
+          <div className="mt-5 grid gap-6 text-base leading-8 text-slate-300 lg:grid-cols-2">
+            <p>
+              One of the key areas I worked around was the guest onboarding journey
+              from registration through to form completion and calendar choice. The
+              resort needed a cleaner flow that could handle both new guests and
+              returning guests, while still making sure privacy, liability, spa,
+              preference and dietary steps were completed in the correct order.
+            </p>
+
+            <p>
+              The important logic was the first-visit branch. If the guest selected
+              that it was their first stay during registration, the system needed to
+              show the full preference flow before spa and dietary forms. If the
+              guest was returning and their preferences already existed, the flow
+              could skip preferences and continue from the spa form.
+            </p>
+          </div>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {guestFlowImages.map((image) => (
+              <VisualProofCard key={image.src} image={image} />
+            ))}
+          </div>
+
+          <div className="mt-8 grid gap-3 rounded-2xl border border-white/10 bg-slate-950/30 p-5 text-sm leading-6 text-slate-300 md:grid-cols-2">
+            <p>• Worked around new-vs-returning guest logic.</p>
+            <p>• Supported YAML/Axion flow changes backed by SQL checks.</p>
+            <p>• Helped connect registration data to later form routing.</p>
+            <p>• Worked across onboarding, forms and calendar-choice behaviour.</p>
+          </div>
+        </div>
+
+        <div className="mt-10 rounded-3xl border border-white/10 bg-white/3 p-6 sm:p-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+            Restaurant booking journey
+          </p>
+
+          <h3 className="mt-4 text-3xl font-bold tracking-tight text-white">
+            Guest-facing restaurant booking flow.
+          </h3>
+
+          <div className="mt-5 grid gap-6 text-base leading-8 text-slate-300 lg:grid-cols-2">
+            <p>
+              I also supported the guest-facing restaurant booking experience inside
+              FEGA. A newer guest homepage and side-navigation structure was
+              introduced, and I worked on restaurant pages for Cariblue, I-Tal, Tao,
+              The Clubhouse and Windows.
+            </p>
+
+            <p>
+              The restaurant flow needed to support different dining types. Some
+              restaurants were walk-in or free dining, while paid reservation
+              restaurants such as Tao required a booking journey where guests selected
+              a date, added booking details and then saw the booking reflected in the
+              guest calendar.
+            </p>
+          </div>
+
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {restaurantFlowImages.map((image) => (
+              <VisualProofCard key={image.src} image={image} />
+            ))}
+          </div>
+
+          <div className="mt-8 grid gap-3 rounded-2xl border border-white/10 bg-slate-950/30 p-5 text-sm leading-6 text-slate-300 md:grid-cols-2">
+            <p>• Added and supported guest-facing restaurant pages.</p>
+            <p>• Worked around paid and walk-in restaurant booking differences.</p>
+            <p>• Helped connect restaurant booking flows to calendar behaviour.</p>
+            <p>• Supported booking data checks, guest-flow testing and validation.</p>
+          </div>
+        </div>
+
+        <div className="mt-10 rounded-3xl border border-cyan-300/20 bg-cyan-300/5 p-6 sm:p-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+            What the visuals show
+          </p>
+
+          <div className="mt-5 grid gap-4 text-sm leading-7 text-slate-300 md:grid-cols-2">
+            <p>• I can work from wireframes and turn planned journeys into app behaviour.</p>
+            <p>• I understand how guest-facing UI, form routing, SQL checks and booking data connect.</p>
+            <p>• I can support real hospitality workflows where one change affects forms, calendars, emails and staff operations.</p>
+            <p>• I can explain commercial work safely without exposing private client information.</p>
+          </div>
         </div>
       </div>
 
