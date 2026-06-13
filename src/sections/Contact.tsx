@@ -39,7 +39,7 @@ function Contact() {
           <a
             href="https://www.linkedin.com/in/owen-davis-465508279/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="rounded-full border border-slate-600 px-6 py-3 font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-300"
           >
             LinkedIn
@@ -48,10 +48,19 @@ function Contact() {
           <a
             href="https://github.com/OwenD-24"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="rounded-full border border-slate-600 px-6 py-3 font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-300"
           >
             GitHub
+          </a>
+
+          <a
+            href="/cv/Owen-Davis-CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full border border-cyan-300/40 px-6 py-3 font-semibold text-cyan-300 transition hover:bg-cyan-300 hover:text-slate-950"
+          >
+            Download CV
           </a>
         </div>
       </div>

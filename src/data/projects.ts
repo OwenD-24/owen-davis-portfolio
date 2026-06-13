@@ -23,7 +23,7 @@ export const projects: Project[] = [
     impact:
       'Contributed to real commercial delivery work including St Lucia go-live preparation, dummy guest testing, permissions checks, data validation and issue resolution with resort teams.',
     tags: ['Commercial Software', 'SQL', 'YAML/Axion', 'Testing', 'Training'],
-    status: 'Private commercial work — safe case study page coming soon.',
+    status: 'Safe public commercial case study now live.',
     caseStudyHref: '/case-studies/bodyholiday-sam-fega',
   },
   {
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     impact:
       'Models guest booking journeys, service/provider/room workflows, couple treatment booking, infrared therapy calendar splitting and admin assignment screens.',
     tags: ['AI-Assisted Development', 'Lovable', 'Product Thinking', 'UX Flow'],
-    status: 'Private prototype — screenshots to be added after sanitising names/data.',
+    status: 'Safe public AI-assisted concept case study now live.',
     caseStudyHref: '/case-studies/fega-sam-ai-rebuild',
   },
   {

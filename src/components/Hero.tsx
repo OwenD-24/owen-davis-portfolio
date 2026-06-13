@@ -49,6 +49,15 @@ function Hero() {
         >
           View Experience
         </a>
+
+        <a
+          href="/cv/Owen-Davis-CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="rounded-full border border-cyan-300/40 px-6 py-3 font-semibold text-cyan-300 transition hover:bg-cyan-300 hover:text-slate-950"
+        >
+          Download CV
+        </a>
       </div>
 
       <div className="mt-10 flex flex-wrap gap-3 text-sm text-slate-400">
