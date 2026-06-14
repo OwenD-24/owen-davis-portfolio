@@ -1,5 +1,82 @@
 import { Link } from 'react-router'
 
+type VisualImage = {
+  src: string
+  alt: string
+  title: string
+  caption: string
+  wide?: boolean
+}
+
+const rebuildVisuals: VisualImage[] = [
+  {
+    src: '/images/case-studies/fega-sam-rebuild/fega-sam-registration-prearrival-flow.png',
+    alt: 'FEGA SAM AI rebuild guest registration and pre-arrival flow',
+    title: 'Guest registration and pre-arrival flow',
+    caption:
+      'A safe visual model of the demo guest journey from email/login through registration, first-stay setup, consent forms, pre-arrival questions, spa, diet and calendar choice.',
+    wide: true,
+  },
+  {
+    src: '/images/case-studies/fega-sam-rebuild/fega-sam-guest-calendar-view.png',
+    alt: 'FEGA SAM AI rebuild guest calendar view',
+    title: 'Guest calendar and app navigation',
+    caption:
+      'Shows the guest-side calendar area after onboarding, where planned activities, restaurant bookings and service journeys can be surfaced.',
+  },
+  {
+    src: '/images/case-studies/fega-sam-rebuild/fega-sam-restaurant-reservation-flow.png',
+    alt: 'FEGA SAM AI rebuild restaurant reservation flow',
+    title: 'Restaurant reservation journey',
+    caption:
+      'A guest-facing restaurant booking concept showing restaurant selection, date/time details, party size and booking confirmation flow.',
+  },
+  {
+    src: '/images/case-studies/fega-sam-rebuild/fega-sam-services-management.png',
+    alt: 'FEGA SAM AI rebuild SAM services management screen',
+    title: 'SAM service setup and catalogue structure',
+    caption:
+      'Shows the admin-side service catalogue concept, including service categories, durations, pricing behaviour and operational service setup.',
+  },
+  {
+    src: '/images/case-studies/fega-sam-rebuild/fega-sam-assignments-status-update.png',
+    alt: 'FEGA SAM AI rebuild assignments status update screen',
+    title: 'SAM assignments and status workflow',
+    caption:
+      'Shows the operational assignment view where bookings can be reviewed and status values such as checked in, no-show or cancelled can be managed.',
+  },
+]
+
+function VisualProofCard({ image }: { image: VisualImage }) {
+  return (
+    <figure
+      className={`overflow-hidden rounded-3xl border border-white/10 bg-slate-950/60 ${
+        image.wide ? 'lg:col-span-2' : ''
+      }`}
+    >
+      <div
+        className={`overflow-hidden border-b border-white/10 bg-white ${
+          image.wide ? 'aspect-16/7' : 'aspect-video'
+        }`}
+      >
+        <img
+          src={image.src}
+          alt={image.alt}
+          loading="lazy"
+          className="h-full w-full object-contain transition duration-500 hover:scale-[1.02]"
+        />
+      </div>
+
+      <figcaption className="p-5">
+        <p className="text-sm font-bold text-white">{image.title}</p>
+        <p className="mt-2 text-sm leading-6 text-slate-400">
+          {image.caption}
+        </p>
+      </figcaption>
+    </figure>
+  )
+}
+
 const workflowGroups = [
   {
     title: 'Guest-facing workflow concepts',
@@ -292,22 +369,28 @@ function FegaSamAiRebuildCaseStudy() {
         </article>
       </div>
 
-      <div className="mt-16 rounded-3xl border border-white/10 bg-white/3 p-8">
+      <section className="mt-16 rounded-3xl border border-cyan-400/20 bg-slate-950/60 p-6 md:p-10">
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-          Screenshot Placeholder
+          Visual Proof
         </p>
 
-        <h2 className="mt-3 text-3xl font-bold text-white">
-          Screenshots can be added later after sanitisation.
+        <h2 className="mt-3 max-w-4xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          Safe prototype visuals showing the rebuilt guest and admin workflow.
         </h2>
 
         <p className="mt-5 max-w-4xl leading-8 text-slate-300">
-          This case study currently focuses on the workflow thinking and
-          development process. Screenshots, UI examples or diagrams can be added
-          later only if all names, guest details, booking references, internal
-          URLs, private data and sensitive business information are removed.
+          These visuals are from the AI-assisted rebuild concept and are included as
+          public-safe examples of the type of onboarding, booking, service setup and
+          assignment workflows I explored. They do not expose private guest data,
+          credentials, internal URLs or confidential implementation details.
         </p>
-      </div>
+
+        <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-2">
+          {rebuildVisuals.map((image) => (
+            <VisualProofCard key={image.title} image={image} />
+          ))}
+        </div>
+      </section>
 
       <div className="mt-16 rounded-3xl border border-cyan-300/20 bg-cyan-300/5 p-8">
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">

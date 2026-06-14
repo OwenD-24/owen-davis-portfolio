@@ -27,6 +27,17 @@ function ProjectCard({ project, featured = false }: ProjectCardProps) {
         ) : null}
       </div>
 
+      {project.image && (
+        <div className="mb-6 overflow-hidden rounded-2xl border border-white/10 bg-slate-950/60">
+          <img
+            src={project.image}
+            alt={`${project.title} screenshot`}
+            loading="lazy"
+            className="aspect-video w-full object-cover transition duration-500 hover:scale-[1.03]"
+          />
+        </div>
+      )}
+
       <h3 className="text-2xl font-bold tracking-tight text-white">
         {project.title}
       </h3>

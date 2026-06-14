@@ -12,6 +12,7 @@ export type Project = {
   links?: ProjectLink[]
   status?: string
   caseStudyHref?: string
+  image?: string
 }
 
 export const projects: Project[] = [
@@ -25,6 +26,7 @@ export const projects: Project[] = [
     tags: ['Commercial Software', 'SQL', 'YAML/Axion', 'Testing', 'Training'],
     status: 'Safe public commercial case study now live.',
     caseStudyHref: '/case-studies/bodyholiday-sam-fega',
+    image: '/images/projects/bodyholiday-commercial-case-study.png',
   },
   {
     title: 'FEGA/SAM AI-Assisted Rebuild Concept',
@@ -36,6 +38,7 @@ export const projects: Project[] = [
     tags: ['AI-Assisted Development', 'Lovable', 'Product Thinking', 'UX Flow'],
     status: 'Safe public AI-assisted concept case study now live.',
     caseStudyHref: '/case-studies/fega-sam-ai-rebuild',
+    image: '/images/case-studies/fega-sam-rebuild/fega-sam-registration-prearrival-flow.png',
   },
   {
     title: 'ZTZ Studios / 72h Offer Engine',
@@ -45,6 +48,7 @@ export const projects: Project[] = [
     impact:
       'Shows product thinking, service structure, conversion-focused copy, responsive layouts, reusable page sections and live deployment experience.',
     tags: ['Frontend', 'Productised Services', 'Responsive Design', 'Deployment'],
+    image: '/images/projects/ztz-72h-offer-engine.png',
     links: [
       {
         label: 'Authority Hub',
@@ -64,6 +68,7 @@ export const projects: Project[] = [
     impact:
       'Built as a solo final bootcamp project with authentication, CRUD workflows, PostgreSQL, Cloudinary media storage, Heroku deployment and structured testing.',
     tags: ['Django', 'Python', 'PostgreSQL', 'Cloudinary', 'Heroku'],
+    image: '/images/projects/graphic-design-blog.png',
     links: [
       {
         label: 'GitHub',
@@ -83,6 +88,7 @@ export const projects: Project[] = [
     impact:
       'Built as a practical technical task before joining TechnoCore, demonstrating Flask routing, database-backed records, template rendering and CRUD-style workflow structure.',
     tags: ['Flask', 'Python', 'MySQL', 'HTML', 'CSS'],
+    image: '/images/projects/collections-dashboard.png',
     links: [
       {
         label: 'GitHub',
@@ -98,6 +104,7 @@ export const projects: Project[] = [
     impact:
       'Shows frontend fundamentals including DOM manipulation, event listeners, keyboard controls, Clipboard API, responsive layout and GitHub Pages deployment.',
     tags: ['HTML', 'Tailwind CSS', 'JavaScript', 'DOM', 'GitHub Pages'],
+    image: '/images/projects/colour-palette-generator.png',
     links: [
       {
         label: 'GitHub',
