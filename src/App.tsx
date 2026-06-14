@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage'
 import ScrollToTop from './components/ScrollToTop'
 import BodyHolidayCaseStudy from './pages/BodyHolidayCaseStudy'
 import FegaSamAiRebuildCaseStudy from './pages/FegaSamAiRebuildCaseStudy'
+import CertificatesPage from './pages/CertificatesPage'
 
 function App() {
   return (
@@ -20,6 +21,10 @@ function App() {
         <Route
           path="/case-studies/fega-sam-ai-rebuild"
           element={<FegaSamAiRebuildCaseStudy />}
+        />
+        <Route 
+          path="/certificates" 
+          element={<CertificatesPage />} 
         />
       </Routes>
     </main>

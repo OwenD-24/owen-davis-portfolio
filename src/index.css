@@ -16,3 +16,16 @@ body {
   min-height: 100vh;
   background: #050816;
 }
+
+.profile-cutout {
+  clip-path: polygon(
+    18% 0%,
+    82% 0%,
+    100% 18%,
+    100% 82%,
+    82% 100%,
+    18% 100%,
+    0% 82%,
+    0% 18%
+  );
+}
