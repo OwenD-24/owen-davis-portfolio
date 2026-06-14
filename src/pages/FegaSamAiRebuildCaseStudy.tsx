@@ -1,4 +1,5 @@
 import { Link } from 'react-router'
+import Reveal from '../components/Reveal'
 
 type VisualImage = {
   src: string
@@ -49,11 +50,7 @@ const rebuildVisuals: VisualImage[] = [
 
 function VisualProofCard({ image }: { image: VisualImage }) {
   return (
-    <figure
-      className={`overflow-hidden rounded-3xl border border-white/10 bg-slate-950/60 ${
-        image.wide ? 'lg:col-span-2' : ''
-      }`}
-    >
+    <figure className="h-full overflow-hidden rounded-3xl border border-white/10 bg-slate-950/60">
       <div
         className={`overflow-hidden border-b border-white/10 bg-white ${
           image.wide ? 'aspect-16/7' : 'aspect-video'
@@ -155,127 +152,135 @@ const learningPoints = [
 
 function FegaSamAiRebuildCaseStudy() {
   return (
-    <section className="mx-auto w-full max-w-6xl px-6 pb-24 pt-36">
-      <Link
-        to="/#projects"
-        className="text-sm font-semibold text-cyan-300 transition hover:text-cyan-200"
-      >
-        ← Back to projects
-      </Link>
+    <section className="mx-auto w-full max-w-7xl px-6 pb-24 pt-36">
+      <Reveal variant="fade-up" delay={80}>
+        <Link
+          to="/#projects"
+          className="text-sm font-semibold text-cyan-300 transition hover:text-cyan-200"
+        >
+          ← Back to projects
+        </Link>
 
-      <div className="mt-10">
-        <p className="text-sm font-semibold uppercase tracking-[0.35em] text-cyan-300">
-          AI-Assisted Prototype
-        </p>
+        <div className="mt-10">
+          <p className="text-sm font-semibold uppercase tracking-[0.35em] text-cyan-300">
+            AI-Assisted Prototype
+          </p>
 
-        <h1 className="mt-4 max-w-5xl text-4xl font-bold tracking-tight text-white sm:text-6xl">
-          FEGA/SAM AI-Assisted Rebuild Concept
-        </h1>
+          <h1 className="mt-4 max-w-5xl text-4xl font-bold tracking-tight text-white sm:text-6xl">
+            FEGA/SAM AI-Assisted Rebuild Concept
+          </h1>
 
-        <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-300">
-          A safe public case study explaining how I used AI-assisted development
-          to explore a modern rebuild concept for hospitality booking and
-          service-management workflows.
-        </p>
-      </div>
+          <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-300">
+            A safe public case study explaining how I used AI-assisted development
+            to explore a modern rebuild concept for hospitality booking and
+            service-management workflows.
+          </p>
+        </div>
+      </Reveal>
 
       <div className="mt-10 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-        <article className="rounded-3xl border border-cyan-300/20 bg-cyan-300/5 p-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-            Overview
-          </p>
-
-          <h2 className="mt-3 text-3xl font-bold text-white">
-            Exploring how complex booking workflows could be rebuilt with a modern app structure.
-          </h2>
-
-          <div className="mt-6 space-y-4 text-base leading-8 text-slate-300">
-            <p>
-              This prototype was built as an AI-assisted concept to explore how
-              hospitality booking, service-management and staff/admin workflows
-              could be represented in a cleaner modern application structure.
+        <Reveal variant="fade-right" delay={140} className="h-full">
+          <article className="rounded-3xl border border-cyan-300/20 bg-cyan-300/5 p-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+              Overview
             </p>
 
-            <p>
-              The aim was not to expose or copy private implementation details.
-              The aim was to practise translating complex operational workflows
-              into clearer screens, data relationships and user journeys.
+            <h2 className="mt-3 text-3xl font-bold text-white">
+              Exploring how complex booking workflows could be rebuilt with a modern app structure.
+            </h2>
+
+            <div className="mt-6 space-y-4 text-base leading-8 text-slate-300">
+              <p>
+                This prototype was built as an AI-assisted concept to explore how
+                hospitality booking, service-management and staff/admin workflows
+                could be represented in a cleaner modern application structure.
+              </p>
+
+              <p>
+                The aim was not to expose or copy private implementation details.
+                The aim was to practise translating complex operational workflows
+                into clearer screens, data relationships and user journeys.
+              </p>
+
+              <p>
+                The project helped me build confidence using AI tools while still
+                keeping control of the logic, structure and workflow decisions.
+              </p>
+            </div>
+          </article>
+        </Reveal>
+        
+        <Reveal variant="fade-left" delay={240} className="h-full">
+          <aside className="rounded-3xl border border-white/10 bg-white/3 p-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+              Project Type
             </p>
 
-            <p>
-              The project helped me build confidence using AI tools while still
-              keeping control of the logic, structure and workflow decisions.
+            <h2 className="mt-3 text-2xl font-bold text-white">
+              Private AI-Assisted Workflow Prototype
+            </h2>
+
+            <p className="mt-5 leading-7 text-slate-300">
+              Built as a private learning and workflow-modelling project using
+              AI-assisted development. Public screenshots can be added later only
+              after all names, data and sensitive details are fully sanitised.
             </p>
-          </div>
-        </article>
 
-        <aside className="rounded-3xl border border-white/10 bg-white/3 p-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-            Project Type
-          </p>
-
-          <h2 className="mt-3 text-2xl font-bold text-white">
-            Private AI-Assisted Workflow Prototype
-          </h2>
-
-          <p className="mt-5 leading-7 text-slate-300">
-            Built as a private learning and workflow-modelling project using
-            AI-assisted development. Public screenshots can be added later only
-            after all names, data and sensitive details are fully sanitised.
-          </p>
-
-          <div className="mt-6 flex flex-wrap gap-2">
-            {[
-              'AI-assisted development',
-              'Workflow modelling',
-              'Product thinking',
-              'React-style structure',
-              'Booking logic',
-              'Admin workflows',
-              'Data validation',
-            ].map((item) => (
-              <span
-                key={item}
-                className="rounded-full border border-white/10 bg-slate-950/30 px-3 py-1 text-xs text-slate-300"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
-        </aside>
+            <div className="mt-6 flex flex-wrap gap-2">
+              {[
+                'AI-assisted development',
+                'Workflow modelling',
+                'Product thinking',
+                'React-style structure',
+                'Booking logic',
+                'Admin workflows',
+                'Data validation',
+              ].map((item) => (
+                <span
+                  key={item}
+                  className="rounded-full border border-white/10 bg-slate-950/30 px-3 py-1 text-xs text-slate-300"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+          </aside>
+        </Reveal>
       </div>
 
-      <div className="mt-16">
-        <p className="text-sm font-semibold uppercase tracking-[0.35em] text-cyan-300">
-          Why I Built It
-        </p>
+      <Reveal variant="fade-up" delay={120}>
+        <div className="mt-16">
+          <p className="text-sm font-semibold uppercase tracking-[0.35em] text-cyan-300">
+            Why I Built It
+          </p>
 
-        <h2 className="mt-4 max-w-4xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          To practise turning real workflow knowledge into modern app architecture.
-        </h2>
+          <h2 className="mt-4 max-w-4xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            To practise turning real workflow knowledge into modern app architecture.
+          </h2>
 
-        <div className="mt-8 rounded-3xl border border-white/10 bg-white/3 p-8">
-          <div className="space-y-4 text-base leading-8 text-slate-300">
-            <p>
-              After working around commercial hospitality and wellness booking
-              workflows, I wanted to explore how similar workflow patterns could
-              be rebuilt in a more modern, component-driven app structure.
-            </p>
+          <div className="mt-8 rounded-3xl border border-white/10 bg-white/3 p-8">
+            <div className="space-y-4 text-base leading-8 text-slate-300">
+              <p>
+                After working around commercial hospitality and wellness booking
+                workflows, I wanted to explore how similar workflow patterns could
+                be rebuilt in a more modern, component-driven app structure.
+              </p>
 
-            <p>
-              The prototype gave me a practical way to test my understanding of
-              guest journeys, service setup, provider availability, room/location
-              data, assignment logic and operational admin screens.
-            </p>
+              <p>
+                The prototype gave me a practical way to test my understanding of
+                guest journeys, service setup, provider availability, room/location
+                data, assignment logic and operational admin screens.
+              </p>
 
-            <p>
-              It also helped me practise a realistic AI-assisted development
-              workflow: prompting, reviewing, correcting, validating and refining
-              output instead of accepting generated code blindly.
-            </p>
+              <p>
+                It also helped me practise a realistic AI-assisted development
+                workflow: prompting, reviewing, correcting, validating and refining
+                output instead of accepting generated code blindly.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      </Reveal>
 
       <div className="mt-16">
         <p className="text-sm font-semibold uppercase tracking-[0.35em] text-cyan-300">
@@ -287,22 +292,26 @@ function FegaSamAiRebuildCaseStudy() {
         </h2>
 
         <div className="mt-8 grid gap-6 md:grid-cols-2">
-          {workflowGroups.map((group) => (
-            <article
+          {workflowGroups.map((group, index) => (
+            <Reveal
               key={group.title}
-              className="rounded-3xl border border-white/10 bg-white/3 p-6"
+              variant="fade-up"
+              delay={index * 100}
+              className="h-full"
             >
-              <h3 className="text-xl font-bold text-white">{group.title}</h3>
+              <article className="h-full rounded-3xl border border-white/10 bg-white/3 p-6">
+                <h3 className="text-xl font-bold text-white">{group.title}</h3>
 
-              <ul className="mt-5 space-y-3 text-sm leading-6 text-slate-300">
-                {group.items.map((item) => (
-                  <li key={item} className="flex gap-3">
-                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-300" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </article>
+                <ul className="mt-5 space-y-3 text-sm leading-6 text-slate-300">
+                  {group.items.map((item) => (
+                    <li key={item} className="flex gap-3">
+                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-300" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            </Reveal>
           ))}
         </div>
       </div>
@@ -317,56 +326,64 @@ function FegaSamAiRebuildCaseStudy() {
         </h2>
 
         <div className="mt-8 grid gap-6 md:grid-cols-2">
-          {processSteps.map((step) => (
-            <article
+          {processSteps.map((step, index) => (
+            <Reveal
               key={step.title}
-              className="rounded-3xl border border-cyan-300/20 bg-cyan-300/5 p-6"
+              variant="fade-up"
+              delay={index * 100}
+              className="h-full"
             >
-              <h3 className="text-xl font-bold text-white">{step.title}</h3>
+              <article className="h-full rounded-3xl border border-cyan-300/20 bg-cyan-300/5 p-6">
+                <h3 className="text-xl font-bold text-white">{step.title}</h3>
 
-              <p className="mt-4 text-sm leading-7 text-slate-300">
-                {step.description}
-              </p>
-            </article>
+                <p className="mt-4 text-sm leading-7 text-slate-300">
+                  {step.description}
+                </p>
+              </article>
+            </Reveal>
           ))}
         </div>
       </div>
 
       <div className="mt-16 grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
-        <article className="rounded-3xl border border-white/10 bg-white/3 p-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-            Improvements Explored
-          </p>
+        <Reveal variant="fade-right" delay={120} className="h-full">
+          <article className="rounded-3xl border border-white/10 bg-white/3 p-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+              Improvements Explored
+            </p>
 
-          <h2 className="mt-3 text-3xl font-bold text-white">
-            Cleaner structure for complex operational flows.
-          </h2>
+            <h2 className="mt-3 text-3xl font-bold text-white">
+              Cleaner structure for complex operational flows.
+            </h2>
 
-          <div className="mt-6 flex flex-wrap gap-2">
-            {improvementAreas.map((item) => (
-              <span
-                key={item}
-                className="rounded-full border border-white/10 bg-slate-950/30 px-3 py-1 text-xs text-slate-300"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
-        </article>
+            <div className="mt-6 flex flex-wrap gap-2">
+              {improvementAreas.map((item) => (
+                <span
+                  key={item}
+                  className="rounded-full border border-white/10 bg-slate-950/30 px-3 py-1 text-xs text-slate-300"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+          </article>
+        </Reveal>
 
-        <article className="rounded-3xl border border-cyan-300/20 bg-cyan-300/5 p-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-            What this proves
-          </p>
+        <Reveal variant="fade-left" delay={220} className="h-full">
+          <article className="rounded-3xl border border-cyan-300/20 bg-cyan-300/5 p-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+              What this proves
+            </p>
 
-          <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-300">
-            <li>• I can use AI tools to speed up prototyping and workflow exploration.</li>
-            <li>• I can translate commercial workflow knowledge into app structure.</li>
-            <li>• I can reason about data relationships, booking logic and user journeys.</li>
-            <li>• I can review generated output instead of relying on it blindly.</li>
-            <li>• I can connect product thinking, frontend structure and operational logic.</li>
-          </ul>
-        </article>
+            <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-300">
+              <li>• I can use AI tools to speed up prototyping and workflow exploration.</li>
+              <li>• I can translate commercial workflow knowledge into app structure.</li>
+              <li>• I can reason about data relationships, booking logic and user journeys.</li>
+              <li>• I can review generated output instead of relying on it blindly.</li>
+              <li>• I can connect product thinking, frontend structure and operational logic.</li>
+            </ul>
+          </article>
+        </Reveal>
       </div>
 
       <section className="mt-16 rounded-3xl border border-cyan-400/20 bg-slate-950/60 p-6 md:p-10">
@@ -386,41 +403,56 @@ function FegaSamAiRebuildCaseStudy() {
         </p>
 
         <div className="mt-10 grid grid-cols-1 gap-6 lg:grid-cols-2">
-          {rebuildVisuals.map((image) => (
-            <VisualProofCard key={image.title} image={image} />
+          {rebuildVisuals.map((image, index) => (
+            <Reveal
+              key={image.title}
+              variant="scale-fade"
+              delay={image.wide ? 120 : 220 + index * 90}
+              className={image.wide ? 'lg:col-span-2' : 'h-full'}
+            >
+              <VisualProofCard image={image} />
+            </Reveal>
           ))}
         </div>
       </section>
 
-      <div className="mt-16 rounded-3xl border border-cyan-300/20 bg-cyan-300/5 p-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-          What I Learned
-        </p>
+      <Reveal variant="fade-up" delay={120}>
+        <div className="mt-16 rounded-3xl border border-cyan-300/20 bg-cyan-300/5 p-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+            What I Learned
+          </p>
 
-        <div className="mt-6 grid gap-4 md:grid-cols-2">
-          {learningPoints.map((point) => (
-            <div
-              key={point}
-              className="rounded-2xl border border-white/10 bg-slate-950/30 p-5 text-sm leading-7 text-slate-300"
-            >
-              {point}
-            </div>
-          ))}
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            {learningPoints.map((point, index) => (
+              <Reveal
+                key={point}
+                variant="fade-up"
+                delay={index * 90}
+                className="h-full"
+              >
+                <div className="h-full rounded-2xl border border-white/10 bg-slate-950/30 p-5 text-sm leading-7 text-slate-300">
+                  {point}
+                </div>
+              </Reveal>
+            ))}
+          </div>
         </div>
-      </div>
+      </Reveal>
 
-      <div className="mt-16 rounded-3xl border border-white/10 bg-white/3 p-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-          Safety and Sanitisation Note
-        </p>
+      <Reveal variant="fade-up" delay={120}>
+        <div className="mt-16 rounded-3xl border border-white/10 bg-white/3 p-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+            Safety and Sanitisation Note
+          </p>
 
-        <p className="mt-5 max-w-4xl leading-8 text-slate-300">
-          This page is written as a safe public overview of an AI-assisted
-          rebuild concept. It does not include real guest names, booking
-          references, private URLs, credentials, internal screenshots,
-          confidential implementation details or sensitive operational data.
-        </p>
-      </div>
+          <p className="mt-5 max-w-4xl leading-8 text-slate-300">
+            This page is written as a safe public overview of an AI-assisted
+            rebuild concept. It does not include real guest names, booking
+            references, private URLs, credentials, internal screenshots,
+            confidential implementation details or sensitive operational data.
+          </p>
+        </div>
+      </Reveal>
     </section>
   )
 }

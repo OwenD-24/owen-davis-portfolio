@@ -1,151 +1,73 @@
 # Owen Davis Portfolio
 
-A React, TypeScript, Vite and Tailwind CSS developer portfolio showcasing my commercial software experience, public projects and AI-assisted development direction.
+A modern developer portfolio built with React, TypeScript, Vite and Tailwind CSS.
 
-## Live Site
-
-[View Portfolio](https://owen-davis-portfolio.vercel.app/)
+Live site: https://owen-davis-portfolio.vercel.app/
 
 ## Overview
 
-This portfolio is designed to present my current developer profile clearly for recruiters, hiring managers and technical contacts.
+This portfolio showcases my work as a Junior Full-Stack Developer, including commercial project experience, AI-assisted workflow prototypes, full-stack projects, frontend builds and development certificates.
 
-It focuses on:
+The site includes:
 
-- Commercial software experience
-- React and TypeScript development
-- Full-stack project history
-- Public GitHub projects
-- AI-assisted development and workflow thinking
-- Case study-ready project structure
-
-## Featured Experience
-
-### BodyHoliday / SAM / FEGA Commercial Case Study
-
-Private commercial project experience supporting a hospitality and wellness booking platform.
-
-The public portfolio summary focuses on safe, non-sensitive areas including:
-
-- Guest-facing booking workflows
-- Staff/admin workflows
-- SQL data operations
-- YAML/Axion configuration
-- Testing with dummy guest scenarios
-- Training and go-live preparation
-- St Lucia operational support
-- AI-assisted workflow replication and prototyping
-
-Sensitive client data, private screenshots and internal implementation details are intentionally excluded.
-
-## Featured Projects
-
-### FEGA/SAM AI-Assisted Rebuild Concept
-
-A private Loveable prototype used to explore how legacy booking workflows could be replicated and improved with AI-assisted development.
-
-Focus areas include:
-
-- Guest booking flows
-- Service/provider/room workflows
-- Couple treatment booking
-- Infrared therapy calendar splitting
-- Admin and assignment screens
-- Safer, cleaner workflow modelling
-
-### ZTZ Studios / 72h Offer Engine
-
-A productised service website and offer engine for landing page, brand kit and audit sprint offers.
-
-Shows:
-
-- Product thinking
-- Conversion-focused page structure
-- Responsive layouts
-- Service architecture
-- Deployment experience
-
-### Graphic Design Blog
-
-Full-stack Django blog app with:
-
-- User registration and login
-- Profile management
-- CRUD blog post functionality
-- Favourites and saved content
-- PostgreSQL
-- Cloudinary
-- Heroku deployment
-
-GitHub: https://github.com/OwenD-24/Graphic-Design-Blog
-
-### Collections Dashboard
-
-Flask and MySQL dashboard built as a practical technical task before joining TechnoCore.
-
-Shows:
-
-- Flask routes
-- MySQL-backed records
-- CRUD-style workflow structure
-- HTML/CSS templates
-- Git/GitHub project handling
-
-GitHub: https://github.com/OwenD-24/mysql-flask-app
-
-### Colour Palette Generator
-
-Vanilla JavaScript frontend project with:
-
-- Random colour palette generation
-- DOM manipulation
-- Event listeners
-- Keyboard shortcuts
-- Clipboard API
-- Responsive layout
-- GitHub Pages deployment
-
-GitHub: https://github.com/OwenD-24/JS-Colour-Picker-Project
-
-Live Demo: https://owend-24.github.io/JS-Colour-Picker-Project/
+* Commercial experience section
+* Selected project cards
+* BodyHoliday / SAM / FEGA commercial case study
+* FEGA/SAM AI-assisted rebuild concept case study
+* Development certificates page
+* Downloadable CV
+* Responsive layout
+* Scroll reveal animations
+* Cursor glow effect
+* Subtle animated background particles
 
 ## Tech Stack
 
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
-- React Router
-- Git
-- GitHub
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* React Router
+* Vercel
 
-## Current Sections
+## Featured Work
 
-- Hero
-- Commercial Experience
-- Projects
-- Skills
-- Contact
+### BodyHoliday / SAM / FEGA Commercial Case Study
 
-## Planned Improvements
+A safe public case study covering my commercial experience supporting a hospitality and wellness booking platform across guest-facing workflows, staff/admin tools, SQL data operations, YAML/Axion configuration, testing, training and go-live preparation.
 
-- Add dedicated BodyHoliday/SAM/FEGA case study page
-- Add dedicated Loveable prototype case study page
-- Add project screenshots
-- Add responsive polish
-- Deploy to Vercel
-- Add live portfolio link to LinkedIn and GitHub profile
+### FEGA/SAM AI-Assisted Rebuild Concept
+
+A private AI-assisted workflow prototype exploring how complex hospitality booking and service-management workflows could be modelled, simplified and rebuilt into a cleaner modern app structure.
+
+### ZTZ Studios / 72h Offer Engine
+
+A productised service website and offer engine for landing page, brand kit and audit-style sprint offers.
+
+### Graphic Design Blog
+
+A full-stack Django project where users can register, log in, manage profiles, create posts and save favourite content.
+
+### Collections Dashboard
+
+A Flask and MySQL dashboard created as a technical task for managing collector notes, customer transactions and payment plans.
+
+### Colour Palette Generator
+
+A vanilla JavaScript frontend project for generating, refreshing and copying colour palettes.
+
+## Key Features
+
+* Responsive desktop and mobile layout
+* Smooth section reveal animations
+* Staggered project/card animations
+* Public-safe case study pages
+* Certificate page with PDF link
+* CV download button
+* Subtle cursor glow and animated ambient background
+* Clean reusable component structure
 
 ## Local Development
-
-This repository is public so recruiters and technical reviewers can inspect the project structure, code quality and setup.
-
-Clone the repository:
-
-```bash
-git clone https://github.com/OwenD-24/owen-davis-portfolio.git
-cd owen-davis-portfolio
-```
 
 Install dependencies:
 
@@ -153,13 +75,13 @@ Install dependencies:
 npm install
 ```
 
-Run the development server:
+Start the development server:
 
 ```bash
 npm run dev
 ```
 
-Build for production:
+Create a production build:
 
 ```bash
 npm run build
@@ -171,12 +93,29 @@ Preview the production build:
 npm run preview
 ```
 
-## Usage Note
+## Project Structure
 
-This portfolio is a personal showcase project for Owen Davis. The code is public for review and learning reference, but the content, branding and case study material are personal to this portfolio.
+```txt
+public/
+  certificates/
+  cv/
+  images/
 
-## Status
+src/
+  components/
+  data/
+  pages/
+  sections/
+```
 
-Version 1 is currently in progress.
+## Notes
 
-The first homepage structure is built. The next steps are homepage polish, case study pages and deployment.
+This portfolio is written as a safe public representation of my experience. Commercial case studies avoid private client data, guest data, credentials, internal URLs, confidential implementation details and sensitive operational information.
+
+## Author
+
+Owen Davis
+
+* GitHub: https://github.com/OwenD-24
+* LinkedIn: https://www.linkedin.com/in/owen-davis-465508279/
+* Portfolio: https://owen-davis-portfolio.vercel.app/

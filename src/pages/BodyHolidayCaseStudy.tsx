@@ -1,4 +1,5 @@
 import { Link } from 'react-router'
+import Reveal from '../components/Reveal'
 
 const contributionGroups = [
   {
@@ -127,11 +128,7 @@ type VisualImage = {
 
 function VisualProofCard({ image }: { image: VisualImage }) {
   return (
-    <figure
-      className={`overflow-hidden rounded-3xl border border-white/10 bg-white/3 ${
-        image.wide ? 'md:col-span-2' : ''
-      }`}
-    >
+    <figure className="h-full overflow-hidden rounded-3xl border border-white/10 bg-white/3">
       <div className="overflow-hidden border-b border-white/10 bg-slate-950/60">
         <img
           src={image.src}
@@ -151,95 +148,101 @@ function VisualProofCard({ image }: { image: VisualImage }) {
 
 function BodyHolidayCaseStudy() {
   return (
-    <section className="mx-auto w-full max-w-6xl px-6 pb-24 pt-36">
-      <Link
-        to="/#projects"
-        className="text-sm font-semibold text-cyan-300 transition hover:text-cyan-200"
-      >
-        ← Back to projects
-      </Link>
+    <section className="mx-auto w-full max-w-7xl px-6 pb-24 pt-36">
+      <Reveal variant="fade-up" delay={80}>
+        <Link
+          to="/#projects"
+          className="text-sm font-semibold text-cyan-300 transition hover:text-cyan-200"
+        >
+          ← Back to projects
+        </Link>
 
-      <div className="mt-10">
-        <p className="text-sm font-semibold uppercase tracking-[0.35em] text-cyan-300">
-          Commercial Case Study
-        </p>
+        <div className="mt-10">
+          <p className="text-sm font-semibold uppercase tracking-[0.35em] text-cyan-300">
+            Commercial Case Study
+          </p>
 
-        <h1 className="mt-4 max-w-5xl text-4xl font-bold tracking-tight text-white sm:text-6xl">
-          BodyHoliday / SAM / FEGA Commercial Case Study
-        </h1>
+          <h1 className="mt-4 max-w-5xl text-4xl font-bold tracking-tight text-white sm:text-6xl">
+            BodyHoliday / SAM / FEGA Commercial Case Study
+          </h1>
 
-        <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-300">
-          A safe public case study covering my commercial experience supporting
-          a hospitality and wellness booking platform across guest-facing
-          workflows, staff/admin tools, operational data, testing, training and
-          go-live preparation.
-        </p>
-      </div>
+          <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-300">
+            A safe public case study covering my commercial experience supporting
+            a hospitality and wellness booking platform across guest-facing
+            workflows, staff/admin tools, operational data, testing, training and
+            go-live preparation.
+          </p>
+        </div>
+      </Reveal>
 
       <div className="mt-10 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-        <article className="rounded-3xl border border-cyan-300/20 bg-cyan-300/5 p-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-            Overview
-          </p>
-
-          <h2 className="mt-3 text-3xl font-bold text-white">
-            Real commercial workflow experience, not just a demo build.
-          </h2>
-
-          <div className="mt-6 space-y-4 text-base leading-8 text-slate-300">
-            <p>
-              This project involved supporting a hospitality and wellness
-              booking platform used around guest journeys, service bookings,
-              staff/admin workflows and operational data.
+        <Reveal variant="fade-right" delay={140} className="h-full">
+          <article className="rounded-3xl border border-cyan-300/20 bg-cyan-300/5 p-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+              Overview
             </p>
 
-            <p>
-              My work sat across the practical delivery side of the system:
-              checking flows, validating data, investigating issues, supporting
-              configuration changes and helping teams understand how the system
-              behaved in realistic scenarios.
+            <h2 className="mt-3 text-3xl font-bold text-white">
+              Real commercial workflow experience, not just a demo build.
+            </h2>
+
+            <div className="mt-6 space-y-4 text-base leading-8 text-slate-300">
+              <p>
+                This project involved supporting a hospitality and wellness
+                booking platform used around guest journeys, service bookings,
+                staff/admin workflows and operational data.
+              </p>
+
+              <p>
+                My work sat across the practical delivery side of the system:
+                checking flows, validating data, investigating issues, supporting
+                configuration changes and helping teams understand how the system
+                behaved in realistic scenarios.
+              </p>
+
+              <p>
+                The strongest value of this experience is that it connected code,
+                data and product thinking to real users and real operational
+                workflows.
+              </p>
+            </div>
+          </article>
+        </Reveal>
+
+        <Reveal variant="fade-left" delay={240} className="h-full">
+          <aside className="rounded-3xl border border-white/10 bg-white/3 p-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+              Role
             </p>
 
-            <p>
-              The strongest value of this experience is that it connected code,
-              data and product thinking to real users and real operational
-              workflows.
+            <h2 className="mt-3 text-2xl font-bold text-white">
+              Junior Full-Stack Developer
+            </h2>
+
+            <p className="mt-3 text-sm text-slate-400">
+              TechnoCore LTD · Feb 2025 — Present
             </p>
-          </div>
-        </article>
 
-        <aside className="rounded-3xl border border-white/10 bg-white/3 p-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-            Role
-          </p>
-
-          <h2 className="mt-3 text-2xl font-bold text-white">
-            Junior Full-Stack Developer
-          </h2>
-
-          <p className="mt-3 text-sm text-slate-400">
-            TechnoCore LTD · Feb 2025 — Present
-          </p>
-
-          <div className="mt-6 flex flex-wrap gap-2">
-            {[
-              'Commercial software',
-              'SQL data checks',
-              'YAML/Axion',
-              'Testing',
-              'Training support',
-              'Bug investigation',
-              'AI-assisted workflow thinking',
-            ].map((item) => (
-              <span
-                key={item}
-                className="rounded-full border border-white/10 bg-slate-950/30 px-3 py-1 text-xs text-slate-300"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
-        </aside>
+            <div className="mt-6 flex flex-wrap gap-2">
+              {[
+                'Commercial software',
+                'SQL data checks',
+                'YAML/Axion',
+                'Testing',
+                'Training support',
+                'Bug investigation',
+                'AI-assisted workflow thinking',
+              ].map((item) => (
+                <span
+                  key={item}
+                  className="rounded-full border border-white/10 bg-slate-950/30 px-3 py-1 text-xs text-slate-300"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+          </aside>
+        </Reveal> 
       </div>
 
       <div className="mt-16">
@@ -252,22 +255,26 @@ function BodyHolidayCaseStudy() {
         </h2>
 
         <div className="mt-8 grid gap-6 md:grid-cols-2">
-          {contributionGroups.map((group) => (
-            <article
+          {contributionGroups.map((group, index) => (
+            <Reveal
               key={group.title}
-              className="rounded-3xl border border-white/10 bg-white/3 p-6"
+              variant="fade-up"
+              delay={index * 100}
+              className="h-full"
             >
-              <h3 className="text-xl font-bold text-white">{group.title}</h3>
+              <article className="h-full rounded-3xl border border-white/10 bg-white/3 p-6">
+                <h3 className="text-xl font-bold text-white">{group.title}</h3>
 
-              <ul className="mt-5 space-y-3 text-sm leading-6 text-slate-300">
-                {group.items.map((item) => (
-                  <li key={item} className="flex gap-3">
-                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-300" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </article>
+                <ul className="mt-5 space-y-3 text-sm leading-6 text-slate-300">
+                  {group.items.map((item) => (
+                    <li key={item} className="flex gap-3">
+                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-300" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            </Reveal>
           ))}
         </div>
       </div>
@@ -317,8 +324,15 @@ function BodyHolidayCaseStudy() {
           </div>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2">
-            {guestFlowImages.map((image) => (
-              <VisualProofCard key={image.src} image={image} />
+            {guestFlowImages.map((image, index) => (
+              <Reveal
+                key={image.src}
+                variant="scale-fade"
+                delay={index * 120}
+                className={image.wide ? 'md:col-span-2' : 'h-full'}
+              >
+                <VisualProofCard image={image} />
+              </Reveal>
             ))}
           </div>
 
@@ -357,8 +371,15 @@ function BodyHolidayCaseStudy() {
           </div>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2">
-            {restaurantFlowImages.map((image) => (
-              <VisualProofCard key={image.src} image={image} />
+            {restaurantFlowImages.map((image, index) => (
+              <Reveal
+                key={image.src}
+                variant="scale-fade"
+                delay={index * 100}
+                className="h-full"
+              >
+                <VisualProofCard image={image} />
+              </Reveal>
             ))}
           </div>
 
@@ -385,134 +406,156 @@ function BodyHolidayCaseStudy() {
       </div>
 
       <div className="mt-16 grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
-        <article className="rounded-3xl border border-white/10 bg-white/3 p-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-            St Lucia Go-Live Support
-          </p>
+        <Reveal variant="fade-right" delay={120} className="h-full">
+          <article className="h-full rounded-3xl border border-white/10 bg-white/3 p-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+              St Lucia Go-Live Support
+            </p>
 
-          <h2 className="mt-3 text-3xl font-bold text-white">
-            On-site exposure to real users and resort operations.
-          </h2>
+            <h2 className="mt-3 text-3xl font-bold text-white">
+              On-site exposure to real users and resort operations.
+            </h2>
 
-          <p className="mt-5 leading-8 text-slate-300">
-            As part of go-live preparation, I travelled internationally to St Lucia and supported
-            in-person testing, training, data validation and issue resolution
-            with resort teams. This gave me direct exposure to how software
-            changes affect real operations, not just local development screens.
-          </p>
-        </article>
+            <p className="mt-5 leading-8 text-slate-300">
+              As part of go-live preparation, I travelled internationally to St Lucia and supported
+              in-person testing, training, data validation and issue resolution
+              with resort teams. This gave me direct exposure to how software
+              changes affect real operations, not just local development screens.
+            </p>
+          </article>
+        </Reveal>
 
-        <article className="rounded-3xl border border-cyan-300/20 bg-cyan-300/5 p-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-            What this proves
-          </p>
+        <Reveal variant="fade-left" delay={220} className="h-full">
+          <article className="h-full rounded-3xl border border-cyan-300/20 bg-cyan-300/5 p-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+              What this proves
+            </p>
 
-          <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-300">
-            <li>• I can work around real commercial workflows and user needs.</li>
-            <li>• I can connect app behaviour to data, configuration and testing.</li>
-            <li>• I can investigate issues and communicate them clearly.</li>
-            <li>• I can work with AI tools while still checking logic manually.</li>
-            <li>• I can contribute inside a real software delivery environment.</li>
-          </ul>
-        </article>
+            <ul className="mt-5 space-y-4 text-sm leading-7 text-slate-300">
+              <li>• I can work around real commercial workflows and user needs.</li>
+              <li>• I can connect app behaviour to data, configuration and testing.</li>
+              <li>• I can investigate issues and communicate them clearly.</li>
+              <li>• I can work with AI tools while still checking logic manually.</li>
+              <li>• I can contribute inside a real software delivery environment.</li>
+            </ul>
+          </article>
+        </Reveal>
       </div>
 
       <div className="mt-16">
-        <p className="text-sm font-semibold uppercase tracking-[0.35em] text-cyan-300">
-          Tools and Workflow Areas
-        </p>
+        <Reveal variant="fade-up" delay={80}>
+          <p className="text-sm font-semibold uppercase tracking-[0.35em] text-cyan-300">
+            Tools and Workflow Areas
+          </p>
 
-        <h2 className="mt-4 max-w-4xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          A mix of frontend thinking, data validation, configuration and delivery support.
-        </h2>
+          <h2 className="mt-4 max-w-4xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            A mix of frontend thinking, data validation, configuration and delivery support.
+          </h2>
+        </Reveal>
 
         <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-          {toolGroups.map((group) => (
-            <article
+          {toolGroups.map((group, index) => (
+            <Reveal
               key={group.title}
-              className="rounded-3xl border border-white/10 bg-white/3 p-6"
+              variant="fade-up"
+              delay={index * 100}
+              className="h-full"
             >
-              <h3 className="text-lg font-bold text-white">{group.title}</h3>
+              <article className="h-full rounded-3xl border border-white/10 bg-white/3 p-6">
+                <h3 className="text-lg font-bold text-white">{group.title}</h3>
 
-              <div className="mt-5 flex flex-wrap gap-2">
-                {group.items.map((item) => (
-                  <span
-                    key={item}
-                    className="rounded-full border border-white/10 px-3 py-1 text-xs text-slate-300"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </article>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {group.items.map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full border border-white/10 px-3 py-1 text-xs text-slate-300"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </article>
+            </Reveal>
           ))}
         </div>
       </div>
 
       <div className="mt-16 grid gap-6 lg:grid-cols-2">
-        <article className="rounded-3xl border border-white/10 bg-white/3 p-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-            Challenges
-          </p>
+        <Reveal variant="fade-right" delay={120} className="h-full">
+          <article className="h-full rounded-3xl border border-white/10 bg-white/3 p-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+              Challenges
+            </p>
 
-          <h2 className="mt-3 text-3xl font-bold text-white">
-            Working across moving parts.
-          </h2>
+            <h2 className="mt-3 text-3xl font-bold text-white">
+              Working across moving parts.
+            </h2>
 
-          <p className="mt-5 leading-8 text-slate-300">
-            The main challenge was that booking platforms are connected systems.
-            A change in service data, provider setup, room data, configuration
-            or permissions can affect what users see elsewhere. This meant the
-            work required careful testing, clear notes and repeated validation.
-          </p>
-        </article>
+            <p className="mt-5 leading-8 text-slate-300">
+              The main challenge was that booking platforms are connected systems.
+              A change in service data, provider setup, room data, configuration
+              or permissions can affect what users see elsewhere. This meant the
+              work required careful testing, clear notes and repeated validation.
+            </p>
+          </article>
+        </Reveal>
 
-        <article className="rounded-3xl border border-white/10 bg-white/3 p-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-            Impact
-          </p>
+        <Reveal variant="fade-left" delay={220} className="h-full">
+          <article className="h-full rounded-3xl border border-white/10 bg-white/3 p-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+              Impact
+            </p>
 
-          <h2 className="mt-3 text-3xl font-bold text-white">
-            Better confidence before real-world use.
-          </h2>
+            <h2 className="mt-3 text-3xl font-bold text-white">
+              Better confidence before real-world use.
+            </h2>
 
-          <p className="mt-5 leading-8 text-slate-300">
-            My support helped validate workflows, identify issues, check data,
-            assist training and improve confidence around how the platform would
-            behave for staff and guests during real operational use.
-          </p>
-        </article>
+            <p className="mt-5 leading-8 text-slate-300">
+              My support helped validate workflows, identify issues, check data,
+              assist training and improve confidence around how the platform would
+              behave for staff and guests during real operational use.
+            </p>
+          </article>
+        </Reveal>
       </div>
 
-      <div className="mt-16 rounded-3xl border border-cyan-300/20 bg-cyan-300/5 p-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-          What I learned
-        </p>
+      <Reveal variant="fade-up" delay={120}>
+        <div className="mt-16 rounded-3xl border border-cyan-300/20 bg-cyan-300/5 p-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+            What I learned
+          </p>
 
-        <div className="mt-6 grid gap-4 md:grid-cols-2">
-          {learningPoints.map((point) => (
-            <div
-              key={point}
-              className="rounded-2xl border border-white/10 bg-slate-950/30 p-5 text-sm leading-7 text-slate-300"
-            >
-              {point}
-            </div>
-          ))}
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            {learningPoints.map((point, index) => (
+              <Reveal
+                key={point}
+                variant="fade-up"
+                delay={index * 90}
+                className="h-full"
+              >
+                <div className="h-full rounded-2xl border border-white/10 bg-slate-950/30 p-5 text-sm leading-7 text-slate-300">
+                  {point}
+                </div>
+              </Reveal>
+            ))}
+          </div>
         </div>
-      </div>
+      </Reveal>
 
-      <div className="mt-16 rounded-3xl border border-white/10 bg-white/3 p-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
-          Confidentiality Note
-        </p>
+      <Reveal variant="fade-up" delay={120}>
+        <div className="mt-16 rounded-3xl border border-white/10 bg-white/3 p-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+            Confidentiality Note
+          </p>
 
-        <p className="mt-5 max-w-4xl leading-8 text-slate-300">
-          This case study is intentionally written as a safe public overview. It
-          does not include private client data, guest data, credentials,
-          internal screenshots, confidential implementation details or sensitive
-          operational information.
-        </p>
-      </div>
+          <p className="mt-5 max-w-4xl leading-8 text-slate-300">
+            This case study is intentionally written as a safe public overview. It
+            does not include private client data, guest data, credentials,
+            internal screenshots, confidential implementation details or sensitive
+            operational information.
+          </p>
+        </div>
+      </Reveal>
     </section>
   )
 }

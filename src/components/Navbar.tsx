@@ -16,7 +16,7 @@ function Navbar() {
 
   return (
     <header className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-slate-950/80 backdrop-blur">
-      <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-5">
+      <nav className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-5">
         <a
           href="/"
           onClick={closeMenu}
@@ -63,7 +63,7 @@ function Navbar() {
 
       {isOpen && (
         <div className="border-t border-white/10 bg-slate-950/95 px-6 py-5 md:hidden">
-          <div className="mx-auto flex w-full max-w-6xl flex-col gap-3">
+          <div className="mx-auto flex w-full max-w-7xl flex-col gap-3">
             {navLinks.map((link) => (
               <a
                 key={link.href}

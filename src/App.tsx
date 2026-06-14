@@ -5,10 +5,14 @@ import ScrollToTop from './components/ScrollToTop'
 import BodyHolidayCaseStudy from './pages/BodyHolidayCaseStudy'
 import FegaSamAiRebuildCaseStudy from './pages/FegaSamAiRebuildCaseStudy'
 import CertificatesPage from './pages/CertificatesPage'
+import CursorGlow from './components/CursorGlow'
+import AmbientLines from './components/AmbientLines'
 
 function App() {
   return (
     <main className="min-h-screen bg-slate-950 text-slate-100">
+      <AmbientLines />
+      <CursorGlow />
       <Navbar />
       <ScrollToTop />
 

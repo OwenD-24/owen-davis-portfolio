@@ -9,7 +9,7 @@ type ProjectCardProps = {
 function ProjectCard({ project, featured = false }: ProjectCardProps) {
   return (
     <article
-      className={`flex h-full flex-col rounded-3xl border p-6 shadow-2xl shadow-black/20 transition ${
+      className={`h-full flex-col rounded-3xl border p-6 shadow-2xl shadow-black/20 transition ${
         featured
           ? 'border-cyan-300/30 bg-cyan-300/5 hover:border-cyan-300/60'
           : 'border-white/10 bg-white/3 hover:border-cyan-300/40 hover:bg-white/5'
