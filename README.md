@@ -40,7 +40,7 @@ A safe public case study covering my commercial experience supporting a hospital
 
 A private AI-assisted workflow prototype exploring how complex hospitality booking and service-management workflows could be modelled, simplified and rebuilt into a cleaner modern app structure.
 
-### ZTZ Studios / 72h Offer Engine
+### Productised Service Build
 
 A productised service website and offer engine for landing page, brand kit and audit-style sprint offers.
 

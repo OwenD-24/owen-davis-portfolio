@@ -41,24 +41,15 @@ export const projects: Project[] = [
     image: '/images/case-studies/fega-sam-rebuild/fega-sam-registration-prearrival-flow.png',
   },
   {
-    title: 'ZTZ Studios / 72h Offer Engine',
+    title: 'Productised Offer Engine',
     eyebrow: 'Productised service build',
     summary:
-      'A productised service website and offer engine for landing page, brand kit and audit sprint offers.',
+      'A productised service website and offer-flow concept for landing page, brand kit and audit-style sprint offers.',
     impact:
-      'Shows product thinking, service structure, conversion-focused copy, responsive layouts, reusable page sections and live deployment experience.',
+      'Focused on product thinking, service structure, conversion-focused copy, responsive layouts, reusable page sections and deployment workflow.',
     tags: ['Frontend', 'Productised Services', 'Responsive Design', 'Deployment'],
-    image: '/images/projects/ztz-72h-offer-engine.png',
-    links: [
-      {
-        label: 'Authority Hub',
-        href: 'https://ztzstudios.co',
-      },
-      {
-        label: 'Offer Engine',
-        href: 'https://72h.ztzstudios.co',
-      },
-    ],
+    image: '/images/projects/72h-offer-engine.png',
+    status: 'Private concept project',
   },
   {
     title: 'Graphic Design Blog',
