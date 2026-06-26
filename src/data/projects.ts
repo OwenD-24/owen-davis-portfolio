@@ -17,7 +17,7 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: 'BodyHoliday / SAM / FEGA Commercial Case Study',
+    title: 'Luxury Wellness Resort Platform — Commercial Case Study',
     eyebrow: 'Commercial project • Private case study',
     summary:
       'Supported a hospitality and wellness booking platform across guest-facing booking flows, staff/admin workflows, SQL data operations, YAML/Axion configuration, testing and training.',
@@ -25,20 +25,20 @@ export const projects: Project[] = [
       'Contributed to real commercial delivery work including St Lucia go-live preparation, dummy guest testing, permissions checks, data validation and issue resolution with resort teams.',
     tags: ['Commercial Software', 'SQL', 'YAML/Axion', 'Testing', 'Training'],
     status: 'Safe public commercial case study now live.',
-    caseStudyHref: '/case-studies/bodyholiday-sam-fega',
-    image: '/images/projects/bodyholiday-commercial-case-study.png',
+    caseStudyHref: '/case-studies/luxury-wellness-resort-platform',
+    image: '/images/projects/luxury-resort-commercial-case-study.png',
   },
   {
-    title: 'FEGA/SAM AI-Assisted Rebuild Concept',
-    eyebrow: 'AI-assisted prototype • Lovable',
+    title: 'Luxury Wellness Resort AI-Assisted Rebuild Concept',
+    eyebrow: 'AI-Assisted Prototype • LLM-Assisted Development',
     summary:
       'A private prototype exploring how legacy booking workflows could be replicated, simplified and improved through AI-assisted development.',
     impact:
       'Models guest booking journeys, service/provider/room workflows, couple treatment booking, infrared therapy calendar splitting and admin assignment screens.',
-    tags: ['AI-Assisted Development', 'Lovable', 'Product Thinking', 'UX Flow'],
+    tags: ['AI-Assisted Development', 'LLM-Assisted Development', 'Product Thinking', 'UX Flow'],
     status: 'Safe public AI-assisted concept case study now live.',
-    caseStudyHref: '/case-studies/fega-sam-ai-rebuild',
-    image: '/images/case-studies/fega-sam-rebuild/fega-sam-registration-prearrival-flow.png',
+    caseStudyHref: '/case-studies/luxury-wellness-resort-ai-rebuild',
+    image: '/images/projects/registration-prearrival-flow.png',
   },
   {
     title: 'Productised Offer Engine',

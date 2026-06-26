@@ -19,14 +19,14 @@ const proofPoints = [
   'Used AI tools as part of the development process while still checking logic and behaviour.',
 ]
 
-function CommercialExperience() {
+function ProfessionalExperience() {
   return (
     <section id="experience" className="mx-auto w-full max-w-7xl px-6 py-24">
       <Reveal variant="fade-up">
         <SectionHeading
-          eyebrow="Commercial Experience"
+          eyebrow="Professional Experience"
           title="Real project experience across users, data, workflows and delivery."
-          description="My commercial experience has involved supporting a hospitality and wellness booking platform..."
+          description="My Professional Experience has involved supporting a hospitality and wellness booking platform..."
         />
       </Reveal>
 
@@ -104,4 +104,4 @@ function CommercialExperience() {
   )
 }
 
-export default CommercialExperience
+export default ProfessionalExperience

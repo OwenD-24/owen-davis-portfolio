@@ -11,38 +11,38 @@ type VisualImage = {
 
 const rebuildVisuals: VisualImage[] = [
   {
-    src: '/images/case-studies/fega-sam-rebuild/fega-sam-registration-prearrival-flow.png',
-    alt: 'FEGA SAM AI rebuild guest registration and pre-arrival flow',
+    src: '/images/case-studies/luxury-resort-ai-rebuild/registration-prearrival-flow.png',
+    alt: 'AI-assisted guest registration and pre-arrival flow',
     title: 'Guest registration and pre-arrival flow',
     caption:
       'A safe visual model of the demo guest journey from email/login through registration, first-stay setup, consent forms, pre-arrival questions, spa, diet and calendar choice.',
     wide: true,
   },
   {
-    src: '/images/case-studies/fega-sam-rebuild/fega-sam-guest-calendar-view.png',
-    alt: 'FEGA SAM AI rebuild guest calendar view',
+    src: '/images/case-studies/luxury-resort-ai-rebuild/guest-calendar-view.png',
+    alt: 'AI-assisted guest calendar view',
     title: 'Guest calendar and app navigation',
     caption:
       'Shows the guest-side calendar area after onboarding, where planned activities, restaurant bookings and service journeys can be surfaced.',
   },
   {
-    src: '/images/case-studies/fega-sam-rebuild/fega-sam-restaurant-reservation-flow.png',
-    alt: 'FEGA SAM AI rebuild restaurant reservation flow',
+    src: '/images/case-studies/luxury-resort-ai-rebuild/restaurant-reservation-flow.png',
+    alt: 'AI-assisted restaurant reservation flow',
     title: 'Restaurant reservation journey',
     caption:
       'A guest-facing restaurant booking concept showing restaurant selection, date/time details, party size and booking confirmation flow.',
   },
   {
-    src: '/images/case-studies/fega-sam-rebuild/fega-sam-services-management.png',
-    alt: 'FEGA SAM AI rebuild SAM services management screen',
-    title: 'SAM service setup and catalogue structure',
+    src: '/images/case-studies/luxury-resort-ai-rebuild/services-management.png',
+    alt: 'AI-assisted staff/admin services management screen',
+    title: 'Staff/admin service setup and catalogue structure',
     caption:
       'Shows the admin-side service catalogue concept, including service categories, durations, pricing behaviour and operational service setup.',
   },
   {
-    src: '/images/case-studies/fega-sam-rebuild/fega-sam-assignments-status-update.png',
+    src: '/images/case-studies/luxury-resort-ai-rebuild/assignments-status-update.png',
     alt: 'FEGA SAM AI rebuild assignments status update screen',
-    title: 'SAM assignments and status workflow',
+    title: 'Staff/admin assignments and status workflow',
     caption:
       'Shows the operational assignment view where bookings can be reviewed and status values such as checked in, no-show or cancelled can be managed.',
   },
@@ -150,7 +150,7 @@ const learningPoints = [
   'The strongest use of AI is not blindly generating screens — it is using it to speed up modelling, prototyping and technical thinking.',
 ]
 
-function FegaSamAiRebuildCaseStudy() {
+function LuxuryResortAiRebuildCaseStudy() {
   return (
     <section className="mx-auto w-full max-w-7xl px-6 pb-24 pt-36">
       <Reveal variant="fade-up" delay={80}>
@@ -167,7 +167,7 @@ function FegaSamAiRebuildCaseStudy() {
           </p>
 
           <h1 className="mt-4 max-w-5xl text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            FEGA/SAM AI-Assisted Rebuild Concept
+            Luxury Wellness Resort AI-Assisted Rebuild Concept
           </h1>
 
           <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-300">
@@ -457,4 +457,4 @@ function FegaSamAiRebuildCaseStudy() {
   )
 }
 
-export default FegaSamAiRebuildCaseStudy
+export default LuxuryResortAiRebuildCaseStudy

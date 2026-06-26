@@ -9,7 +9,7 @@ function Projects() {
       <Reveal variant="fade-up">
         <SectionHeading
           eyebrow="Selected Projects"
-          title="Commercial experience, AI-assisted prototypes and public builds."
+          title="Professional Experience, AI-assisted prototypes and public builds."
           description="A focused selection of commercial work, AI-assisted workflow thinking, full-stack projects and frontend fundamentals."
         />
       </Reveal>

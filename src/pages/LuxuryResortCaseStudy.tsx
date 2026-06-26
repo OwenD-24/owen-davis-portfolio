@@ -64,23 +64,23 @@ const learningPoints = [
 
 const guestFlowImages = [
   {
-    src: '/images/case-studies/bodyholiday/bodyholiday-guest-flow-full-wireframe.png',
-    alt: 'BodyHoliday guest onboarding flow full wireframe',
+    src: '/images/case-studies/luxury-resort/guest-flow-full-wireframe.png',
+    alt: 'Guest onboarding flow full wireframe for a luxury wellness resort platform',
     title: 'Full guest-flow wireframe',
     caption:
       'A public-safe wireframe showing the planned journey from email link, login and registration through to terms, forms and calendar choice.',
     wide: true,
   },
   {
-    src: '/images/case-studies/bodyholiday/bodyholiday-guest-flow-registration-login.png',
-    alt: 'BodyHoliday registration and login branch wireframe',
+    src: '/images/case-studies/luxury-resort/guest-flow-registration-login.png',
+    alt: 'Guest registration and login branch wireframe',
     title: 'Registration and login branch',
     caption:
       'Shows how unregistered guests were routed through account creation before returning to the login flow.',
   },
   {
-    src: '/images/case-studies/bodyholiday/bodyholiday-guest-flow-first-visit-calendar-choice.png',
-    alt: 'BodyHoliday first visit form and calendar choice wireframe',
+    src: '/images/case-studies/luxury-resort/guest-flow-first-visit-calendar-choice.png',
+    alt: 'First-visit form and calendar choice wireframe',
     title: 'First-visit and calendar-choice logic',
     caption:
       'Shows how first-time guests moved through preferences, spa and dietary forms before choosing whether to build their own calendar or wait for pre-arrivals.',
@@ -89,29 +89,29 @@ const guestFlowImages = [
 
 const restaurantFlowImages = [
   {
-    src: '/images/case-studies/bodyholiday/bodyholiday-guest-side-nav-homepage.png',
-    alt: 'BodyHoliday FEGA guest side navigation homepage',
+    src: '/images/case-studies/luxury-resort/guest-side-nav-homepage.png',
+    alt: 'Guest-facing side navigation homepage',
     title: 'Guest-side navigation',
     caption:
-      'The updated FEGA guest navigation showing the restaurant area inside the wider guest experience.',
+      'The updated guest-facing booking system, guest navigation showing the restaurant area inside the wider guest experience.',
   },
   {
-    src: '/images/case-studies/bodyholiday/bodyholiday-restaurant-category-menu.png',
-    alt: 'BodyHoliday restaurant category menu screen',
+    src: '/images/case-studies/luxury-resort/restaurant-category-menu.png',
+    alt: 'Restaurant category menu screen',
     title: 'Restaurant category menu',
     caption:
       'Shows how dining options such as Tao, I-Tal, Cariblue, Windows and The Clubhouse were presented to guests.',
   },
   {
-    src: '/images/case-studies/bodyholiday/bodyholiday-restaurant-paid-booking-date.png',
-    alt: 'BodyHoliday Tao paid restaurant booking date selection screen',
+    src: '/images/case-studies/luxury-resort/restaurant-paid-booking-date.png',
+    alt: 'Paid restaurant booking date selection screen',
     title: 'Paid restaurant date selection',
     caption:
       'A Tao booking screen showing the start of the guest-facing paid restaurant reservation journey.',
   },
   {
-    src: '/images/case-studies/bodyholiday/bodyholiday-demo-calendar-bookings.png',
-    alt: 'BodyHoliday demo calendar showing guest bookings',
+    src: '/images/case-studies/luxury-resort/demo-calendar-bookings.png',
+    alt: 'Demo calendar showing guest bookings',
     title: 'Demo calendar booking view',
     caption:
       'A demo calendar view showing how guest bookings and activities could appear after booking-flow actions were completed.',
@@ -146,7 +146,7 @@ function VisualProofCard({ image }: { image: VisualImage }) {
   )
 }
 
-function BodyHolidayCaseStudy() {
+function LuxuryResortCaseStudy() {
   return (
     <section className="mx-auto w-full max-w-7xl px-6 pb-24 pt-36">
       <Reveal variant="fade-up" delay={80}>
@@ -163,11 +163,11 @@ function BodyHolidayCaseStudy() {
           </p>
 
           <h1 className="mt-4 max-w-5xl text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            BodyHoliday / SAM / FEGA Commercial Case Study
+            Luxury Wellness Resort Platform — Commercial Case Study
           </h1>
 
           <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-300">
-            A safe public case study covering my commercial experience supporting
+            A safe public case study covering my Professional Experience supporting
             a hospitality and wellness booking platform across guest-facing
             workflows, staff/admin tools, operational data, testing, training and
             go-live preparation.
@@ -290,7 +290,7 @@ function BodyHolidayCaseStudy() {
 
         <p className="mt-5 max-w-4xl text-lg leading-8 text-slate-300">
           These visuals show safe examples of the type of guest-facing workflow and
-          booking experience I worked around during the BodyHoliday / SAM / FEGA
+          booking experience I worked around during the luxury wellness resort platform
           project. They are included as public-safe visual references and do not
           expose private guest data, credentials, internal implementation details or
           confidential business logic.
@@ -355,10 +355,10 @@ function BodyHolidayCaseStudy() {
 
           <div className="mt-5 grid gap-6 text-base leading-8 text-slate-300 lg:grid-cols-2">
             <p>
-              I also supported the guest-facing restaurant booking experience inside
-              FEGA. A newer guest homepage and side-navigation structure was
-              introduced, and I worked on restaurant pages for Cariblue, I-Tal, Tao,
-              The Clubhouse and Windows.
+              I also supported the guest-facing restaurant booking experience inside 
+              the new guest-facing booking system. A newer guest homepage and side-navigation 
+              structure was introduced, and I worked on restaurant pages for 
+              Cariblue, I-Tal, Tao, The Clubhouse and Windows.
             </p>
 
             <p>
@@ -560,4 +560,4 @@ function BodyHolidayCaseStudy() {
   )
 }
 
-export default BodyHolidayCaseStudy
+export default LuxuryResortCaseStudy

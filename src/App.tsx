@@ -2,8 +2,8 @@ import { Route, Routes } from 'react-router'
 import Navbar from './components/Navbar'
 import HomePage from './pages/HomePage'
 import ScrollToTop from './components/ScrollToTop'
-import BodyHolidayCaseStudy from './pages/BodyHolidayCaseStudy'
-import FegaSamAiRebuildCaseStudy from './pages/FegaSamAiRebuildCaseStudy'
+import LuxuryResortCaseStudy from './pages/LuxuryResortCaseStudy'
+import LuxuryResortAiRebuildCaseStudy from './pages/LuxuryResortAiRebuildCaseStudy'
 import CertificatesPage from './pages/CertificatesPage'
 import CursorGlow from './components/CursorGlow'
 import AmbientLines from './components/AmbientLines'
@@ -19,12 +19,13 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route
-          path="/case-studies/bodyholiday-sam-fega"
-          element={<BodyHolidayCaseStudy />}
+          path="/case-studies/luxury-wellness-resort-platform"
+          element={<LuxuryResortCaseStudy />}
         />
+
         <Route
-          path="/case-studies/fega-sam-ai-rebuild"
-          element={<FegaSamAiRebuildCaseStudy />}
+          path="/case-studies/luxury-wellness-resort-ai-rebuild"
+          element={<LuxuryResortAiRebuildCaseStudy />}
         />
         <Route 
           path="/certificates" 

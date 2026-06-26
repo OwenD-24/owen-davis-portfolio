@@ -1,5 +1,5 @@
 import Hero from '../components/Hero'
-import CommercialExperience from '../sections/CommercialExperience'
+import ProfessionalExperience from '../sections/ProfessionalExperience'
 import Projects from '../sections/Projects'
 import Skills from '../sections/Skills'
 import Contact from '../sections/Contact'
@@ -8,7 +8,7 @@ function HomePage() {
   return (
     <>
       <Hero />
-      <CommercialExperience />
+      <ProfessionalExperience />
       <Projects />
       <Skills />
       <Contact />

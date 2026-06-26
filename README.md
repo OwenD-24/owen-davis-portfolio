@@ -10,10 +10,10 @@ This portfolio showcases my work as a Junior Full-Stack Developer, including com
 
 The site includes:
 
-* Commercial experience section
+* Professional Experience section
 * Selected project cards
-* BodyHoliday / SAM / FEGA commercial case study
-* FEGA/SAM AI-assisted rebuild concept case study
+* Luxury Wellness Resort Platform — Commercial Case Study
+* Luxury Wellness Resort AI-Assisted Rebuild Concept case study
 * Development certificates page
 * Downloadable CV
 * Responsive layout
@@ -32,11 +32,11 @@ The site includes:
 
 ## Featured Work
 
-### BodyHoliday / SAM / FEGA Commercial Case Study
+### Luxury Wellness Resort Platform — Commercial Case Study
 
-A safe public case study covering my commercial experience supporting a hospitality and wellness booking platform across guest-facing workflows, staff/admin tools, SQL data operations, YAML/Axion configuration, testing, training and go-live preparation.
+A safe public case study covering my Professional Experience supporting a hospitality and wellness booking platform across guest-facing workflows, staff/admin tools, SQL data operations, YAML/Axion configuration, testing, training and go-live preparation.
 
-### FEGA/SAM AI-Assisted Rebuild Concept
+### Luxury Wellness Resort AI-Assisted Rebuild Concept
 
 A private AI-assisted workflow prototype exploring how complex hospitality booking and service-management workflows could be modelled, simplified and rebuilt into a cleaner modern app structure.
 
