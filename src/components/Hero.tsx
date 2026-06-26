@@ -63,15 +63,15 @@ function Hero() {
           </p>
 
           <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Junior Full-Stack Developer building practical web apps and workflow systems.
+            Full-Stack Developer building practical web apps and workflow systems.
           </h1>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-            I&apos;m Owen Davis, a Junior Full-Stack Developer with commercial
-            experience supporting hospitality and wellness booking workflows,
-            guest-facing journeys, staff/admin tools, SQL data operations,
-            YAML/Axion configuration, testing, bug fixing, training and
-            AI-assisted development.
+            I&apos;m Owen Davis, a Full-Stack Developer with nearly 1.5 years of
+            commercial experience and around 2 years of hands-on software development
+            across full-stack training, project builds, financial workflow exposure and
+            luxury wellness resort software. I work with JavaScript, React, Python, SQL,
+            YAML/Axion, testing, debugging, workflow systems and AI-assisted development.
           </p>
         </Reveal>
 
