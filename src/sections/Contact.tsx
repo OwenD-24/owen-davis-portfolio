@@ -29,7 +29,7 @@ const contactLinks = [
   },
   {
     label: 'Download CV',
-    href: '/cv/Owen-Davis-CV.pdf',
+    href: '/cv/Owen-Davis-FullStack-CV.pdf',
     primary: false,
     external: true,
     accent: true,
