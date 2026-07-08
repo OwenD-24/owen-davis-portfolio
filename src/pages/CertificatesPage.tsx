@@ -80,6 +80,64 @@ function CertificatesPage() {
             </div>
         </section>
       </Reveal>
+      <Reveal variant="fade-up" delay={240}>
+        <section className="mt-10 rounded-3xl border border-white/10 bg-slate-950/40 p-8">
+            <p className="text-xs font-bold uppercase tracking-[0.45em] text-cyan-300">
+            SQL Certificate
+            </p>
+
+            <div className="mt-8 grid gap-8 md:grid-cols-[1.2fr_0.8fr]">
+            <div>
+                <h2 className="text-3xl font-black text-white">
+                Mimo — SQL Certificate
+                </h2>
+
+                <p className="mt-5 text-base leading-8 text-slate-300">
+                Certificate of Completion for finishing Mimo&apos;s SQL curriculum,
+                covering core SQL concepts, table creation, querying data across one
+                or multiple tables, and managing a basic relational database.
+                </p>
+
+                <div className="mt-6 flex flex-wrap gap-2">
+                {[
+                    'SQL',
+                    'Relational databases',
+                    'Table management',
+                    'Filtering',
+                    'Aggregate functions',
+                    'Joins',
+                    'Subqueries',
+                    'Database basics',
+                ].map((skill) => (
+                    <span
+                    key={skill}
+                    className="rounded-full border border-white/10 bg-slate-900/60 px-3 py-1 text-xs text-slate-300"
+                    >
+                    {skill}
+                    </span>
+                ))}
+                </div>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-6">
+                <p className="text-sm font-semibold text-slate-400">Issued</p>
+                <p className="mt-2 text-xl font-bold text-white">July 2026</p>
+
+                <p className="mt-6 text-sm font-semibold text-slate-400">Provider</p>
+                <p className="mt-2 text-xl font-bold text-white">Mimo</p>
+
+                <a
+                href="\certificates\mimo-sql-certificate.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-8 inline-flex rounded-full bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 transition hover:bg-cyan-200"
+                >
+                View Certificate
+                </a>
+            </div>
+            </div>
+        </section>
+        </Reveal>
       <Reveal variant="fade-up" delay={280}>                 
         <section className="mt-10 rounded-3xl border border-white/10 bg-slate-950/40 p-8">
             <p className="text-xs font-bold uppercase tracking-[0.45em] text-cyan-300">
@@ -87,8 +145,9 @@ function CertificatesPage() {
             </p>
 
             <p className="mt-4 max-w-3xl text-base leading-8 text-slate-300">
-            This page will be updated as I complete more React, TypeScript,
-            AI engineering and automation training.
+                A small collection of certificates supporting my progression into
+                FinTech-focused software development, with learning across full-stack
+                development, Python, SQL, data workflows and AI-assisted engineering.
             </p>
         </section>
       </Reveal> 
