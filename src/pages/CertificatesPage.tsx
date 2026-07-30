@@ -4,153 +4,216 @@ import Reveal from '../components/Reveal'
 function CertificatesPage() {
   return (
     <main className="mx-auto w-full max-w-7xl px-6 pb-24 pt-36">
-        <Reveal variant="fade-up" delay={80}>
-            <Link
-                to="/"
-                className="text-sm font-semibold text-cyan-300 transition hover:text-cyan-200"
-            >
-                ← Back to home
-            </Link>
-        </Reveal>
+      <Reveal variant="fade-up" delay={80}>
+        <Link
+          to="/"
+          className="text-sm font-semibold text-cyan-300 transition hover:text-cyan-200"
+        >
+          ← Back to home
+        </Link>
+      </Reveal>
+
       <Reveal variant="fade-up" delay={120}>
         <section className="mt-12">
-            <p className="text-sm font-bold uppercase tracking-[0.45em] text-cyan-300">
+          <p className="text-sm font-bold uppercase tracking-[0.45em] text-cyan-300">
             Certificates
-            </p>
+          </p>
 
-            <h1 className="mt-6 max-w-4xl text-5xl font-black tracking-tight text-white md:text-7xl">
+          <h1 className="mt-6 max-w-4xl text-5xl font-black tracking-tight text-white md:text-7xl">
             Development certificates and learning proof.
-            </h1>
+          </h1>
 
-            <p className="mt-8 max-w-3xl text-lg leading-8 text-slate-300">
+          <p className="mt-8 max-w-3xl text-lg leading-8 text-slate-300">
             A small collection of certificates supporting my full-stack development,
             frontend and AI-assisted software learning.
-            </p>
+          </p>
         </section>
       </Reveal>
 
       <Reveal variant="fade-up" delay={180}>
         <section className="mt-16 rounded-3xl border border-cyan-400/20 bg-slate-950/60 p-8">
-            <p className="text-xs font-bold uppercase tracking-[0.45em] text-cyan-300">
+          <p className="text-xs font-bold uppercase tracking-[0.45em] text-cyan-300">
             Featured Certificate
-            </p>
+          </p>
 
-            <div className="mt-8 grid gap-8 md:grid-cols-[1.2fr_0.8fr]">
-                <div>
-                    <h2 className="text-3xl font-black text-white">
-                    Code Institute — Full-Stack Developer Skills Bootcamp
-                    </h2>
-
-                    <p className="mt-5 text-base leading-8 text-slate-300">
-                    Certificate of Achievement for completing a 16-week High-Performance
-                    Full-Stack Developer Skills Bootcamp covering front-end development,
-                    JavaScript, Python and Django full-stack frameworks.
-                    </p>
-
-                    <div className="mt-6 flex flex-wrap gap-2">
-                    {['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'Python', 'Django'].map(
-                        (skill) => (
-                        <span
-                            key={skill}
-                            className="rounded-full border border-white/10 bg-slate-900/60 px-3 py-1 text-xs text-slate-300"
-                        >
-                            {skill}
-                        </span>
-                        )
-                    )}
-                    </div>
-                </div>
-
-                <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-6">
-                    <p className="text-sm font-semibold text-slate-400">Issued</p>
-                    <p className="mt-2 text-xl font-bold text-white">October 2024</p>
-
-                    <p className="mt-6 text-sm font-semibold text-slate-400">Provider</p>
-                    <p className="mt-2 text-xl font-bold text-white">Code Institute</p>
-
-                    <a
-                    href="/certificates/code-institute-full-stack-certificate.pdf"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="mt-8 inline-flex rounded-full bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 transition hover:bg-cyan-200"
-                    >
-                    View Certificate
-                    </a>
-                </div>
-            </div>
-        </section>
-      </Reveal>
-      <Reveal variant="fade-up" delay={240}>
-        <section className="mt-10 rounded-3xl border border-white/10 bg-slate-950/40 p-8">
-            <p className="text-xs font-bold uppercase tracking-[0.45em] text-cyan-300">
-            SQL Certificate
-            </p>
-
-            <div className="mt-8 grid gap-8 md:grid-cols-[1.2fr_0.8fr]">
+          <div className="mt-8 grid gap-8 md:grid-cols-[1.2fr_0.8fr]">
             <div>
-                <h2 className="text-3xl font-black text-white">
-                Mimo — SQL Certificate
-                </h2>
+              <h2 className="text-3xl font-black text-white">
+                Code Institute — Full-Stack Developer Skills Bootcamp
+              </h2>
 
-                <p className="mt-5 text-base leading-8 text-slate-300">
-                Certificate of Completion for finishing Mimo&apos;s SQL curriculum,
-                covering core SQL concepts, table creation, querying data across one
-                or multiple tables, and managing a basic relational database.
-                </p>
+              <p className="mt-5 text-base leading-8 text-slate-300">
+                Certificate of Achievement for completing a 16-week High-Performance
+                Full-Stack Developer Skills Bootcamp covering front-end development,
+                JavaScript, Python and Django full-stack frameworks.
+              </p>
 
-                <div className="mt-6 flex flex-wrap gap-2">
-                {[
-                    'SQL',
-                    'Relational databases',
-                    'Table management',
-                    'Filtering',
-                    'Aggregate functions',
-                    'Joins',
-                    'Subqueries',
-                    'Database basics',
-                ].map((skill) => (
+              <div className="mt-6 flex flex-wrap gap-2">
+                {['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'Python', 'Django'].map(
+                  (skill) => (
                     <span
-                    key={skill}
-                    className="rounded-full border border-white/10 bg-slate-900/60 px-3 py-1 text-xs text-slate-300"
+                      key={skill}
+                      className="rounded-full border border-white/10 bg-slate-900/60 px-3 py-1 text-xs text-slate-300"
                     >
-                    {skill}
+                      {skill}
                     </span>
-                ))}
-                </div>
+                  )
+                )}
+              </div>
             </div>
 
             <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-6">
-                <p className="text-sm font-semibold text-slate-400">Issued</p>
-                <p className="mt-2 text-xl font-bold text-white">July 2026</p>
+              <p className="text-sm font-semibold text-slate-400">Issued</p>
+              <p className="mt-2 text-xl font-bold text-white">October 2024</p>
 
-                <p className="mt-6 text-sm font-semibold text-slate-400">Provider</p>
-                <p className="mt-2 text-xl font-bold text-white">Mimo</p>
+              <p className="mt-6 text-sm font-semibold text-slate-400">Provider</p>
+              <p className="mt-2 text-xl font-bold text-white">Code Institute</p>
 
-                <a
-                href="\certificates\mimo-sql-certificate.pdf"
+              <a
+                href="/certificates/code-institute-full-stack-certificate.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-8 inline-flex rounded-full bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 transition hover:bg-cyan-200"
-                >
+              >
                 View Certificate
-                </a>
+              </a>
             </div>
-            </div>
+          </div>
         </section>
-        </Reveal>
-      <Reveal variant="fade-up" delay={280}>                 
-        <section className="mt-10 rounded-3xl border border-white/10 bg-slate-950/40 p-8">
-            <p className="text-xs font-bold uppercase tracking-[0.45em] text-cyan-300">
-            More coming soon
-            </p>
+      </Reveal>
 
-            <p className="mt-4 max-w-3xl text-base leading-8 text-slate-300">
-                A small collection of certificates supporting my progression into
-                FinTech-focused software development, with learning across full-stack
-                development, Python, SQL, data workflows and AI-assisted engineering.
-            </p>
+      <Reveal variant="fade-up" delay={240}>
+        <section className="mt-10 rounded-3xl border border-white/10 bg-slate-950/40 p-8">
+          <p className="text-xs font-bold uppercase tracking-[0.45em] text-cyan-300">
+            SQL Certificate
+          </p>
+
+          <div className="mt-8 grid gap-8 md:grid-cols-[1.2fr_0.8fr]">
+            <div>
+              <h2 className="text-3xl font-black text-white">
+                Mimo — SQL Certificate
+              </h2>
+
+              <p className="mt-5 text-base leading-8 text-slate-300">
+                Certificate of Completion for finishing Mimo&apos;s SQL curriculum,
+                covering core SQL concepts, table creation, querying data across one
+                or multiple tables, and managing a basic relational database.
+              </p>
+
+              <div className="mt-6 flex flex-wrap gap-2">
+                {[
+                  'SQL',
+                  'Relational databases',
+                  'Table management',
+                  'Filtering',
+                  'Aggregate functions',
+                  'Joins',
+                  'Subqueries',
+                  'Database basics',
+                ].map((skill) => (
+                  <span
+                    key={skill}
+                    className="rounded-full border border-white/10 bg-slate-900/60 px-3 py-1 text-xs text-slate-300"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-6">
+              <p className="text-sm font-semibold text-slate-400">Issued</p>
+              <p className="mt-2 text-xl font-bold text-white">July 2026</p>
+
+              <p className="mt-6 text-sm font-semibold text-slate-400">Provider</p>
+              <p className="mt-2 text-xl font-bold text-white">Mimo</p>
+
+              <a
+                href="/certificates/mimo-sql-certificate.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-8 inline-flex rounded-full bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 transition hover:bg-cyan-200"
+              >
+                View Certificate
+              </a>
+            </div>
+          </div>
         </section>
-      </Reveal> 
+      </Reveal>
+
+      <Reveal variant="fade-up" delay={300}>
+        <section className="mt-10 rounded-3xl border border-white/10 bg-slate-950/40 p-8">
+          <p className="text-xs font-bold uppercase tracking-[0.45em] text-cyan-300">
+            Python Certificate
+          </p>
+
+          <div className="mt-8 grid gap-8 md:grid-cols-[1.2fr_0.8fr]">
+            <div>
+              <h2 className="text-3xl font-black text-white">
+                Mimo — Python Certificate
+              </h2>
+
+              <p className="mt-5 text-base leading-8 text-slate-300">
+                Certificate of Completion for finishing Mimo&apos;s Python curriculum,
+                covering core Python concepts including data structures, control
+                statements, functions, modules and practical programming fundamentals.
+              </p>
+
+              <div className="mt-6 flex flex-wrap gap-2">
+                {[
+                  'Python',
+                  'Data structures',
+                  'Lists',
+                  'Dictionaries',
+                  'Tuples',
+                  'Control statements',
+                  'Functions',
+                  'Modules',
+                  'Programming fundamentals',
+                ].map((skill) => (
+                  <span
+                    key={skill}
+                    className="rounded-full border border-white/10 bg-slate-900/60 px-3 py-1 text-xs text-slate-300"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-6">
+              <p className="text-sm font-semibold text-slate-400">Issued</p>
+              <p className="mt-2 text-xl font-bold text-white">July 2026</p>
+
+              <p className="mt-6 text-sm font-semibold text-slate-400">Provider</p>
+              <p className="mt-2 text-xl font-bold text-white">Mimo</p>
+
+              <a
+                href="/certificates/mimo-python-certificate.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-8 inline-flex rounded-full bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 transition hover:bg-cyan-200"
+              >
+                View Certificate
+              </a>
+            </div>
+          </div>
+        </section>
+      </Reveal>
+
+      <Reveal variant="fade-up" delay={320}>
+        <section className="mt-10 rounded-3xl border border-white/10 bg-slate-950/40 p-8">
+          <p className="text-xs font-bold uppercase tracking-[0.45em] text-cyan-300">
+            More coming soon
+          </p>
+
+          <p className="mt-4 max-w-3xl text-base leading-8 text-slate-300">
+            A small collection of certificates supporting my progression into
+            FinTech-focused software development, with learning across full-stack
+            development, Python, SQL, data workflows and AI-assisted engineering.
+          </p>
+        </section>
+      </Reveal>
     </main>
   )
 }
