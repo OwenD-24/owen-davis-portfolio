@@ -144,31 +144,34 @@ function CertificatesPage() {
       <Reveal variant="fade-up" delay={300}>
         <section className="mt-10 rounded-3xl border border-white/10 bg-slate-950/40 p-8">
           <p className="text-xs font-bold uppercase tracking-[0.45em] text-cyan-300">
-            Python Certificate
+            Python Development Certificate
           </p>
 
           <div className="mt-8 grid gap-8 md:grid-cols-[1.2fr_0.8fr]">
             <div>
               <h2 className="text-3xl font-black text-white">
-                Mimo — Python Certificate
+                Mimo — Python Development Professional Certificate
               </h2>
 
               <p className="mt-5 text-base leading-8 text-slate-300">
-                Certificate of Completion for finishing Mimo&apos;s Python curriculum,
-                covering core Python concepts including data structures, control
-                statements, functions, modules and practical programming fundamentals.
+                Professional Certificate for completing Mimo&apos;s Python Development
+                curriculum, covering core Python programming concepts, functional and
+                object-oriented programming paradigms, script development, modules, APIs,
+                introductory AI development and hands-on experience with large language
+                models.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-2">
                 {[
                   'Python',
                   'Data structures',
-                  'Lists',
-                  'Dictionaries',
-                  'Tuples',
-                  'Control statements',
                   'Functions',
+                  'Object-oriented programming',
+                  'Script development',
                   'Modules',
+                  'APIs',
+                  'AI development',
+                  'LLMs',
                   'Programming fundamentals',
                 ].map((skill) => (
                   <span
@@ -189,7 +192,7 @@ function CertificatesPage() {
               <p className="mt-2 text-xl font-bold text-white">Mimo</p>
 
               <a
-                href="/certificates/mimo-python-certificate.pdf"
+                href="/certificates/mimo-python-development-certificate.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-8 inline-flex rounded-full bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 transition hover:bg-cyan-200"
