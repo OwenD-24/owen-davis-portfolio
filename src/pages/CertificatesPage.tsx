@@ -204,7 +204,68 @@ function CertificatesPage() {
         </section>
       </Reveal>
 
-      <Reveal variant="fade-up" delay={320}>
+      <Reveal variant="fade-up" delay={360}>
+        <section className="mt-10 rounded-3xl border border-white/10 bg-slate-950/40 p-8">
+          <p className="text-xs font-bold uppercase tracking-[0.45em] text-cyan-300">
+            TypeScript Certificate
+          </p>
+
+          <div className="mt-8 grid gap-8 md:grid-cols-[1.2fr_0.8fr]">
+            <div>
+              <h2 className="text-3xl font-black text-white">
+                Mimo — TypeScript Certificate
+              </h2>
+
+              <p className="mt-5 text-base leading-8 text-slate-300">
+                Certificate of Completion for finishing Mimo&apos;s TypeScript curriculum,
+                covering the core concepts needed to program in TypeScript and supporting
+                stronger typed JavaScript development for frontend and full-stack software
+                projects.
+              </p>
+
+              <div className="mt-6 flex flex-wrap gap-2">
+                {[
+                  'TypeScript',
+                  'JavaScript',
+                  'Typed programming',
+                  'Frontend development',
+                  'Full-stack development',
+                  'Programming fundamentals',
+                  'Functions',
+                  'Objects',
+                  'Arrays',
+                ].map((skill) => (
+                  <span
+                    key={skill}
+                    className="rounded-full border border-white/10 bg-slate-900/60 px-3 py-1 text-xs text-slate-300"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-6">
+              <p className="text-sm font-semibold text-slate-400">Issued</p>
+              <p className="mt-2 text-xl font-bold text-white">August 2026</p>
+
+              <p className="mt-6 text-sm font-semibold text-slate-400">Provider</p>
+              <p className="mt-2 text-xl font-bold text-white">Mimo</p>
+
+              <a
+                href="/certificates/mimo-typescript-certificate.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-8 inline-flex rounded-full bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 transition hover:bg-cyan-200"
+              >
+                View Certificate
+              </a>
+            </div>
+          </div>
+        </section>
+      </Reveal>
+
+      <Reveal variant="fade-up" delay={400}>
         <section className="mt-10 rounded-3xl border border-white/10 bg-slate-950/40 p-8">
           <p className="text-xs font-bold uppercase tracking-[0.45em] text-cyan-300">
             More coming soon
