@@ -264,8 +264,71 @@ function CertificatesPage() {
           </div>
         </section>
       </Reveal>
-
       <Reveal variant="fade-up" delay={400}>
+        <section className="mt-10 rounded-3xl border border-white/10 bg-slate-950/40 p-8">
+          <p className="text-xs font-bold uppercase tracking-[0.45em] text-cyan-300">
+            React Certificate
+          </p>
+
+          <div className="mt-8 grid gap-8 md:grid-cols-[1.2fr_0.8fr]">
+            <div>
+              <h2 className="text-3xl font-black text-white">
+                Mimo — React Certificate
+              </h2>
+
+              <p className="mt-5 text-base leading-8 text-slate-300">
+                Certificate of Completion for successfully finishing Mimo&apos;s
+                React curriculum, covering React core concepts, reusable components,
+                props, state management, hooks, routing, query parameters and calling
+                external APIs for modern frontend and full-stack applications.
+              </p>
+
+              <div className="mt-6 flex flex-wrap gap-2">
+                {[
+                  'React',
+                  'JavaScript',
+                  'JSX',
+                  'Components',
+                  'Props',
+                  'State management',
+                  'React Hooks',
+                  'useState',
+                  'useEffect',
+                  'API integration',
+                  'Routing',
+                  'Query parameters',
+                ].map((skill) => (
+                  <span
+                    key={skill}
+                    className="rounded-full border border-white/10 bg-slate-900/60 px-3 py-1 text-xs text-slate-300"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="rounded-2xl border border-white/10 bg-slate-900/70 p-6">
+              <p className="text-sm font-semibold text-slate-400">Issued</p>
+              <p className="mt-2 text-xl font-bold text-white">August 2026</p>
+
+              <p className="mt-6 text-sm font-semibold text-slate-400">Provider</p>
+              <p className="mt-2 text-xl font-bold text-white">Mimo</p>
+
+              <a
+                href="/certificates/mimo-react-certificate.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="mt-8 inline-flex rounded-full bg-cyan-300 px-6 py-3 text-sm font-bold text-slate-950 transition hover:bg-cyan-200"
+              >
+                View Certificate
+              </a>
+            </div>
+          </div>
+        </section>
+      </Reveal>
+
+      <Reveal variant="fade-up" delay={440}>
         <section className="mt-10 rounded-3xl border border-white/10 bg-slate-950/40 p-8">
           <p className="text-xs font-bold uppercase tracking-[0.45em] text-cyan-300">
             More coming soon
